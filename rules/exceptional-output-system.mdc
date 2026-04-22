@@ -1,0 +1,16 @@
+---
+description: Always apply the exceptional output system when doing substantive work in this workspace — update CHANGELOG, evolution/item history, reanalyze/export when useful, git-ai/git to index. See WORKING_PRINCIPLES § Exceptional output system.
+alwaysApply: true
+---
+
+# Exceptional output system (always apply)
+
+When you do **substantive work** in ~/.cursor (new or changed docs, skills, flows, config, or significant edits):
+
+1. **CHANGELOG** — Update `docs/CHANGELOG.md`: [Unreleased] → **Added** or **Changed**; doc/skill name, what changed, cross-links.
+2. **Evolution / item history** — Update `docs/EVOLUTION_AND_ITEM_HISTORY.md` when creating or materially changing items; link to git-ai, supremepower, self-improvement, self-assistance where relevant.
+3. **Reanalyze and export** — When work is conversation-heavy or user asks to sort/format/organize: run **reanalyze-entire-conversation**; save to `docs/exports/conversation-export-YYYY-MM-DD-<topic>.md` if appropriate.
+4. **Session transcript / what actually happened (when useful)** — When it would help handoff, audit, or evidence, consider capturing **what actually happened** in the session (actions, steps, outcomes, signals — in whatever form fits). Not narrowly triggered; situation-based. Reference our conversation patterns (flexible language, implement concepts). See learned-context § Session transcript; conversation-patterns-and-predictive-methods.
+5. **Index** — After significant changes: git-ai checkpoint (if configured) and git commit; remind user if they want to run git from ~/.cursor.
+
+**Full checklist:** `docs/WORKING_PRINCIPLES.md` § Exceptional output system; `docs/SYSTEM_DEFINITION.md` §1 (principle row).

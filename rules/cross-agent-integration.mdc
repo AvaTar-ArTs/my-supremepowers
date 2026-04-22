@@ -1,0 +1,16 @@
+---
+description: When propagating skills to other code agents (supremepower, qwen, codex, etc.), generate from canonical source; never remove originals. Use cross-agent-skill-propagation and cursor-integration.
+globs: "**/skills/**/*.md","**/plans/*supremepower*","**/scripts/generate*.py"
+alwaysApply: false
+---
+
+# Cross-agent integration
+
+When the user asks to propagate skills to **other code agents** (e.g. ~/.supremepower, ~/.qwen, ~/.codex) or to design "Cursor → other agent" flows:
+
+1. **Canonical source is read-only.** Edit only in the canonical tree (e.g. ~/.cursor/skills/superpowers/skills/). Propagation reads from it and writes to targets.
+2. **Generate, never remove.** Produce adapted output in the target; do not delete or overwrite originals in the canonical source.
+3. **Agent-agnostic.** Pattern works for all code agents; adapt paths and loading mechanism per target.
+4. **Invoke:** **cross-agent-skill-propagation** for the full pattern; **cursor-integration** for designing new propagation targets; **create-rule** when creating rules that enforce this.
+
+Existing generator (Cursor → ~/.supremepower): `python3 ~/.cursor/scripts/generate-supremepower-skills.py`.

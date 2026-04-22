@@ -1,0 +1,277 @@
+# Cleanup Preview (Archive-Only)
+
+No files were modified.
+
+## Pattern-Based Candidates
+- .DS_Store
+- docs/.DS_Store
+- extensions/.DS_Store
+- extensions/ComputerUse/.DS_Store
+- extensions/ComputerUse/.git/.DS_Store
+- extensions/ComputerUse/.git/ai/.DS_Store
+- extensions/ComputerUse/.git/objects/.DS_Store
+- extensions/ComputerUse/.git/refs/.DS_Store
+- extensions/ComputerUse/servers/.DS_Store
+- extensions/ComputerUse/servers/computerusemcp/.DS_Store
+- extensions/ComputerUse/servers/computerusemcp/lib/.DS_Store
+- extensions/ComputerUse/servers/computerusemcp/lib/python3.12/.DS_Store
+- extensions/boring/.DS_Store
+- extensions/boring/.github/.DS_Store
+- extensions/boring/docs/.DS_Store
+- extensions/boring/examples/.DS_Store
+- extensions/boring/examples/hello-world-plugin/.DS_Store
+- extensions/boring/extensions/.DS_Store
+- extensions/boring/extensions/vscode-boring/.DS_Store
+- extensions/boring/node_modules/.DS_Store
+- extensions/boring/src/boring/cli/skill.py.bak
+- extensions/boring/tests/.DS_Store
+- extensions/code-review/.DS_Store
+- extensions/gemini-cli-git/.DS_Store
+- extensions/gemini-cli-git/.git/.DS_Store
+- extensions/gemini-cli-git/.git/ai/.DS_Store
+- extensions/gemini-cli-git/.git/objects/.DS_Store
+- extensions/gemini-cli-git/.git/refs/.DS_Store
+- extensions/gemini-cli-prompt-library/.DS_Store
+- extensions/mcp-toolbox-for-databases/.DS_Store
+- extensions/my-code-analyzer/.DS_Store
+- extensions/run-long-command/.DS_Store
+- extensions/skill-porter/.DS_Store
+- extensions/skill-porter/.git/.DS_Store
+- extensions/skill-porter/.git/ai/.DS_Store
+- extensions/skill-porter/.git/objects/.DS_Store
+- extensions/skill-porter/.git/refs/.DS_Store
+- extensions/skill-porter/examples/.DS_Store
+- extensions/skill-porter/examples/before-after/.DS_Store
+- extensions/supremepower/.DS_Store
+- extensions/supremepower/.codex/.history/INSTALL copy_20260412043933.md
+- extensions/supremepower/.codex/.history/INSTALL copy_20260412044000.md
+- extensions/supremepower/.codex/.history/INSTALL copy_20260412044022.md
+- extensions/supremepower/.codex/.history/INSTALL copy_20260412044038.md
+- extensions/supremepower/.codex/.history/INSTALL copy_20260412044040.md
+- extensions/supremepower/.serena/.DS_Store
+- extensions/supremepower/adapters/.DS_Store
+- extensions/supremepower/commands/.DS_Store
+- extensions/supremepower/core/.DS_Store
+- extensions/supremepower/core/skills/.DS_Store
+- extensions/supremepower/docs/.DS_Store
+- extensions/supremepower/mcp-server/.DS_Store
+- extensions/supremepower/mcp-server/dist/.DS_Store
+- extensions/supremepower/mcp-server/src/.DS_Store
+- extensions/supremepower/node_modules/.DS_Store
+- extensions/supremepower/node_modules/@babel/.DS_Store
+- extensions/supremepower/node_modules/@jest/.DS_Store
+- extensions/supremepower/node_modules/@jridgewell/.DS_Store
+- extensions/supremepower/node_modules/@sinonjs/.DS_Store
+- extensions/supremepower/node_modules/@types/.DS_Store
+- extensions/supremepower/node_modules/ajv-formats/.DS_Store
+- extensions/supremepower/node_modules/babel-plugin-istanbul/.DS_Store
+- extensions/supremepower/node_modules/call-bind-apply-helpers/.DS_Store
+- extensions/supremepower/node_modules/call-bound/.DS_Store
+- extensions/supremepower/node_modules/concat-map/.DS_Store
+- extensions/supremepower/node_modules/dunder-proto/.DS_Store
+- extensions/supremepower/node_modules/es-define-property/.DS_Store
+- extensions/supremepower/node_modules/es-errors/.DS_Store
+- extensions/supremepower/node_modules/escalade/.DS_Store
+- extensions/supremepower/node_modules/esprima/.DS_Store
+- extensions/supremepower/node_modules/eventsource-parser/.DS_Store
+- extensions/supremepower/node_modules/eventsource/.DS_Store
+- extensions/supremepower/node_modules/exit/.DS_Store
+- extensions/supremepower/node_modules/fast-json-stable-stringify/.DS_Store
+- extensions/supremepower/node_modules/fast-uri/.DS_Store
+- extensions/supremepower/node_modules/function-bind/.DS_Store
+- extensions/supremepower/node_modules/get-intrinsic/.DS_Store
+- extensions/supremepower/node_modules/get-proto/.DS_Store
+- extensions/supremepower/node_modules/gopd/.DS_Store
+- extensions/supremepower/node_modules/has-symbols/.DS_Store
+- extensions/supremepower/node_modules/html-escaper/.DS_Store
+- extensions/supremepower/node_modules/iconv-lite/.DS_Store
+- extensions/supremepower/node_modules/istanbul-lib-instrument/.DS_Store
+- extensions/supremepower/node_modules/jest-cli/.DS_Store
+- extensions/supremepower/node_modules/jest-snapshot/.DS_Store
+- extensions/supremepower/node_modules/jest-validate/.DS_Store
+- extensions/supremepower/node_modules/jest-worker/.DS_Store
+- extensions/supremepower/node_modules/jsesc/.DS_Store
+- extensions/supremepower/node_modules/json5/.DS_Store
+- extensions/supremepower/node_modules/math-intrinsics/.DS_Store
+- extensions/supremepower/node_modules/pretty-format/.DS_Store
+- extensions/supremepower/node_modules/prompts/.DS_Store
+- extensions/supremepower/node_modules/qs/.DS_Store
+- extensions/supremepower/node_modules/react-is/.DS_Store
+- extensions/supremepower/node_modules/resolve/.DS_Store
+- extensions/supremepower/node_modules/side-channel-list/.DS_Store
+- extensions/supremepower/node_modules/side-channel-weakmap/.DS_Store
+- extensions/supremepower/node_modules/side-channel/.DS_Store
+- extensions/supremepower/node_modules/source-map/.DS_Store
+- extensions/supremepower/node_modules/sprintf-js/.DS_Store
+- extensions/supremepower/node_modules/supports-preserve-symlinks-flag/.DS_Store
+- extensions/supremepower/node_modules/typescript/.DS_Store
+- extensions/supremepower/node_modules/yargs/.DS_Store
+- extensions/supremepower/node_modules/zod-to-json-schema/.DS_Store
+- extensions/supremepower/node_modules/zod/.DS_Store
+- extensions/supremepower/skills/.DS_Store
+- extensions/supremepower/tests/.DS_Store
+- extensions/supremepower/tests/subagent-driven-dev/.DS_Store
+- extensions/supremepower/tests/unit/.DS_Store
+- hookify/.DS_Store
+- new-hooks-system/.DS_Store
+- plugins/.DS_Store
+- products/.DS_Store
+- qwen_agents/.DS_Store
+- qwen_code-review/.DS_Store
+- qwen_docs/.DS_Store
+- qwen_integrations/.DS_Store
+- qwen_projects/-Users-steven/.DS_Store
+- qwen_projects/.DS_Store
+- qwen_skills/.DS_Store
+- qwen_skills/superpowers-subagent-driven-development/.DS_Store
+- qwen_superpowers/.DS_Store
+- qwen_superpowers/4.2.0/.DS_Store
+- qwen_superpowers/docs/.DS_Store
+- qwen_superpowers/skills/.DS_Store
+- qwen_superpowers/tests/.DS_Store
+- qwen_templates/.DS_Store
+- skills/.DS_Store
+- skills/disabled/.DS_Store
+- skills/setup-tooluniverse/.DS_Store
+- tests/.DS_Store
+- tests/skill-triggering/.DS_Store
+- tests/subagent-driven-dev/.DS_Store
+
+## Duplicate Mirror Candidates
+- archive: `qwen_integrations/supremepower/commands/brainstorm.md` | keep: `commands/brainstorm.md` | group_size=5
+- archive: `qwen_integrations/supremepower/commands/execute-plan.md` | keep: `commands/execute-plan.md` | group_size=5
+- archive: `qwen_integrations/supremepower/commands/write-plan.md` | keep: `commands/write-plan.md` | group_size=5
+- archive: `qwen_integrations/supremepower/skills/dispatching-parallel-agents/SKILL.md` | keep: `skills/dispatching-parallel-agents/SKILL.md` | group_size=5
+- archive: `qwen_integrations/supremepower/skills/ecosystem-clarity/SKILL.md` | keep: `skills/disabled/ecosystem-clarity/SKILL.md` | group_size=4
+- archive: `qwen_integrations/supremepower/skills/finishing-a-development-branch/SKILL.md` | keep: `skills/finishing-a-development-branch/SKILL.md` | group_size=5
+- archive: `qwen_integrations/supremepower/skills/receiving-code-review/SKILL.md` | keep: `skills/receiving-code-review/SKILL.md` | group_size=5
+- archive: `qwen_integrations/supremepower/skills/requesting-code-review/SKILL.md` | keep: `skills/requesting-code-review/SKILL.md` | group_size=5
+- archive: `qwen_integrations/supremepower/skills/requesting-code-review/code-reviewer.md` | keep: `skills/disabled/requesting-code-review/code-reviewer.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/subagent-driven-development/code-quality-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/code-quality-reviewer-prompt.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/subagent-driven-development/implementer-prompt.md` | keep: `skills/disabled/subagent-driven-development/implementer-prompt.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/subagent-driven-development/spec-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/spec-reviewer-prompt.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/CREATION-LOG.md` | keep: `skills/systematic-debugging/CREATION-LOG.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/SKILL.md` | keep: `skills/systematic-debugging/SKILL.md` | group_size=4
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/condition-based-waiting-example.ts` | keep: `skills/systematic-debugging/condition-based-waiting-example.ts` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/condition-based-waiting.md` | keep: `skills/systematic-debugging/condition-based-waiting.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/defense-in-depth.md` | keep: `skills/systematic-debugging/defense-in-depth.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/find-polluter.sh` | keep: `skills/systematic-debugging/find-polluter.sh` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/root-cause-tracing.md` | keep: `skills/systematic-debugging/root-cause-tracing.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/test-academic.md` | keep: `skills/systematic-debugging/test-academic.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/test-pressure-1.md` | keep: `skills/systematic-debugging/test-pressure-1.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/test-pressure-2.md` | keep: `skills/systematic-debugging/test-pressure-2.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/systematic-debugging/test-pressure-3.md` | keep: `skills/systematic-debugging/test-pressure-3.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/test-driven-development/SKILL.md` | keep: `skills/test-driven-development/SKILL.md` | group_size=4
+- archive: `qwen_integrations/supremepower/skills/test-driven-development/testing-anti-patterns.md` | keep: `skills/test-driven-development/testing-anti-patterns.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/using-superpowers/references/codex-tools.md` | keep: `skills/using-superpowers/references/codex-tools.md` | group_size=6
+- archive: `qwen_integrations/supremepower/skills/using-superpowers/references/copilot-tools.md` | keep: `skills/using-superpowers/references/copilot-tools.md` | group_size=6
+- archive: `qwen_integrations/supremepower/skills/using-superpowers/references/gemini-tools.md` | keep: `skills/using-superpowers/references/gemini-tools.md` | group_size=6
+- archive: `qwen_integrations/supremepower/skills/verification-before-completion/SKILL.md` | keep: `skills/verification-before-completion/SKILL.md` | group_size=4
+- archive: `qwen_integrations/supremepower/skills/writing-skills/anthropic-best-practices.md` | keep: `skills/disabled/writing-skills/anthropic-best-practices.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/writing-skills/examples/CLAUDE_MD_TESTING.md` | keep: `skills/disabled/writing-skills/examples/CLAUDE_MD_TESTING.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/writing-skills/graphviz-conventions.dot` | keep: `skills/disabled/writing-skills/graphviz-conventions.dot` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/writing-skills/persuasion-principles.md` | keep: `skills/disabled/writing-skills/persuasion-principles.md` | group_size=7
+- archive: `qwen_integrations/supremepower/skills/writing-skills/render-graphs.js` | keep: `skills/disabled/writing-skills/render-graphs.js` | group_size=7
+- archive: `qwen_skills/devtu-fix-tool/SKILL.md` | keep: `skills/devtu-fix-tool/SKILL.md` | group_size=2
+- archive: `qwen_skills/devtu-optimize-descriptions/SKILL.md` | keep: `skills/devtu-optimize-descriptions/SKILL.md` | group_size=2
+- archive: `qwen_skills/devtu-optimize-skills/SKILL.md` | keep: `skills/devtu-optimize-skills/SKILL.md` | group_size=2
+- archive: `qwen_skills/setup-tooluniverse/SKILL.md` | keep: `skills/setup-tooluniverse/SKILL.md` | group_size=2
+- archive: `qwen_skills/superpowers-dispatching-parallel-agents/SKILL.md` | keep: `skills/dispatching-parallel-agents/SKILL.md` | group_size=5
+- archive: `qwen_skills/superpowers-ecosystem-clarity/SKILL.md` | keep: `skills/disabled/ecosystem-clarity/SKILL.md` | group_size=4
+- archive: `qwen_skills/superpowers-finishing-a-development-branch/SKILL.md` | keep: `skills/finishing-a-development-branch/SKILL.md` | group_size=5
+- archive: `qwen_skills/superpowers-receiving-code-review/SKILL.md` | keep: `skills/receiving-code-review/SKILL.md` | group_size=5
+- archive: `qwen_skills/superpowers-requesting-code-review/SKILL.md` | keep: `skills/requesting-code-review/SKILL.md` | group_size=5
+- archive: `qwen_skills/superpowers-requesting-code-review/code-reviewer.md` | keep: `skills/disabled/requesting-code-review/code-reviewer.md` | group_size=7
+- archive: `qwen_skills/superpowers-subagent-driven-development/code-quality-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/code-quality-reviewer-prompt.md` | group_size=7
+- archive: `qwen_skills/superpowers-subagent-driven-development/implementer-prompt.md` | keep: `skills/disabled/subagent-driven-development/implementer-prompt.md` | group_size=7
+- archive: `qwen_skills/superpowers-subagent-driven-development/spec-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/spec-reviewer-prompt.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/CREATION-LOG.md` | keep: `skills/systematic-debugging/CREATION-LOG.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/SKILL.md` | keep: `skills/systematic-debugging/SKILL.md` | group_size=4
+- archive: `qwen_skills/superpowers-systematic-debugging/condition-based-waiting-example.ts` | keep: `skills/systematic-debugging/condition-based-waiting-example.ts` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/condition-based-waiting.md` | keep: `skills/systematic-debugging/condition-based-waiting.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/defense-in-depth.md` | keep: `skills/systematic-debugging/defense-in-depth.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/find-polluter.sh` | keep: `skills/systematic-debugging/find-polluter.sh` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/root-cause-tracing.md` | keep: `skills/systematic-debugging/root-cause-tracing.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/test-academic.md` | keep: `skills/systematic-debugging/test-academic.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/test-pressure-1.md` | keep: `skills/systematic-debugging/test-pressure-1.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/test-pressure-2.md` | keep: `skills/systematic-debugging/test-pressure-2.md` | group_size=7
+- archive: `qwen_skills/superpowers-systematic-debugging/test-pressure-3.md` | keep: `skills/systematic-debugging/test-pressure-3.md` | group_size=7
+- archive: `qwen_skills/superpowers-test-driven-development/SKILL.md` | keep: `skills/test-driven-development/SKILL.md` | group_size=4
+- archive: `qwen_skills/superpowers-test-driven-development/testing-anti-patterns.md` | keep: `skills/test-driven-development/testing-anti-patterns.md` | group_size=7
+- archive: `qwen_skills/superpowers-using-superpowers/references/codex-tools.md` | keep: `skills/using-superpowers/references/codex-tools.md` | group_size=6
+- archive: `qwen_skills/superpowers-using-superpowers/references/copilot-tools.md` | keep: `skills/using-superpowers/references/copilot-tools.md` | group_size=6
+- archive: `qwen_skills/superpowers-using-superpowers/references/gemini-tools.md` | keep: `skills/using-superpowers/references/gemini-tools.md` | group_size=6
+- archive: `qwen_skills/superpowers-verification-before-completion/SKILL.md` | keep: `skills/verification-before-completion/SKILL.md` | group_size=4
+- archive: `qwen_skills/superpowers-writing-skills/anthropic-best-practices.md` | keep: `skills/disabled/writing-skills/anthropic-best-practices.md` | group_size=7
+- archive: `qwen_skills/superpowers-writing-skills/examples/CLAUDE_MD_TESTING.md` | keep: `skills/disabled/writing-skills/examples/CLAUDE_MD_TESTING.md` | group_size=7
+- archive: `qwen_skills/superpowers-writing-skills/graphviz-conventions.dot` | keep: `skills/disabled/writing-skills/graphviz-conventions.dot` | group_size=7
+- archive: `qwen_skills/superpowers-writing-skills/persuasion-principles.md` | keep: `skills/disabled/writing-skills/persuasion-principles.md` | group_size=7
+- archive: `qwen_skills/superpowers-writing-skills/render-graphs.js` | keep: `skills/disabled/writing-skills/render-graphs.js` | group_size=7
+- archive: `qwen_skills/superpowers-writing-skills/testing-skills-with-subagents.md` | keep: `skills/disabled/writing-skills/testing-skills-with-subagents.md` | group_size=4
+- archive: `qwen_skills/tooluniverse-clinical-trial-design/SKILL.md` | keep: `skills/tooluniverse-clinical-trial-design/SKILL.md` | group_size=2
+- archive: `qwen_skills/tooluniverse-sequence-retrieval/SKILL.md` | keep: `skills/tooluniverse-sequence-retrieval/SKILL.md` | group_size=2
+- archive: `qwen_skills/tooluniverse/SKILL.md` | keep: `skills/tooluniverse/SKILL.md` | group_size=2
+- archive: `qwen_superpowers/4.2.0/agents/code-reviewer.md` | keep: `agents/code-reviewer.md` | group_size=4
+- archive: `qwen_superpowers/4.2.0/commands/brainstorm.md` | keep: `commands/brainstorm.md` | group_size=5
+- archive: `qwen_superpowers/4.2.0/commands/execute-plan.md` | keep: `commands/execute-plan.md` | group_size=5
+- archive: `qwen_superpowers/4.2.0/commands/write-plan.md` | keep: `commands/write-plan.md` | group_size=5
+- archive: `qwen_superpowers/4.2.0/hooks/run-hook.cmd` | keep: `hooks/run-hook.cmd` | group_size=3
+- archive: `qwen_superpowers/4.2.0/skills/requesting-code-review/code-reviewer.md` | keep: `skills/disabled/requesting-code-review/code-reviewer.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/subagent-driven-development/code-quality-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/code-quality-reviewer-prompt.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/subagent-driven-development/implementer-prompt.md` | keep: `skills/disabled/subagent-driven-development/implementer-prompt.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/subagent-driven-development/spec-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/spec-reviewer-prompt.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/CREATION-LOG.md` | keep: `skills/systematic-debugging/CREATION-LOG.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/condition-based-waiting-example.ts` | keep: `skills/systematic-debugging/condition-based-waiting-example.ts` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/condition-based-waiting.md` | keep: `skills/systematic-debugging/condition-based-waiting.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/defense-in-depth.md` | keep: `skills/systematic-debugging/defense-in-depth.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/find-polluter.sh` | keep: `skills/systematic-debugging/find-polluter.sh` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/root-cause-tracing.md` | keep: `skills/systematic-debugging/root-cause-tracing.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/test-academic.md` | keep: `skills/systematic-debugging/test-academic.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/test-pressure-1.md` | keep: `skills/systematic-debugging/test-pressure-1.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/test-pressure-2.md` | keep: `skills/systematic-debugging/test-pressure-2.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/systematic-debugging/test-pressure-3.md` | keep: `skills/systematic-debugging/test-pressure-3.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/test-driven-development/testing-anti-patterns.md` | keep: `skills/test-driven-development/testing-anti-patterns.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/writing-skills/anthropic-best-practices.md` | keep: `skills/disabled/writing-skills/anthropic-best-practices.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/writing-skills/examples/CLAUDE_MD_TESTING.md` | keep: `skills/disabled/writing-skills/examples/CLAUDE_MD_TESTING.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/writing-skills/graphviz-conventions.dot` | keep: `skills/disabled/writing-skills/graphviz-conventions.dot` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/writing-skills/persuasion-principles.md` | keep: `skills/disabled/writing-skills/persuasion-principles.md` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/writing-skills/render-graphs.js` | keep: `skills/disabled/writing-skills/render-graphs.js` | group_size=7
+- archive: `qwen_superpowers/4.2.0/skills/writing-skills/testing-skills-with-subagents.md` | keep: `skills/disabled/writing-skills/testing-skills-with-subagents.md` | group_size=4
+- archive: `qwen_superpowers/agents/code-reviewer.md` | keep: `agents/code-reviewer.md` | group_size=4
+- archive: `qwen_superpowers/commands/brainstorm.md` | keep: `commands/brainstorm.md` | group_size=5
+- archive: `qwen_superpowers/commands/execute-plan.md` | keep: `commands/execute-plan.md` | group_size=5
+- archive: `qwen_superpowers/commands/write-plan.md` | keep: `commands/write-plan.md` | group_size=5
+- archive: `qwen_superpowers/hooks/hooks.json` | keep: `hooks/hooks.json` | group_size=2
+- archive: `qwen_superpowers/hooks/run-hook.cmd` | keep: `hooks/run-hook.cmd` | group_size=3
+- archive: `qwen_superpowers/skills/dispatching-parallel-agents/SKILL.md` | keep: `skills/dispatching-parallel-agents/SKILL.md` | group_size=5
+- archive: `qwen_superpowers/skills/ecosystem-clarity/SKILL.md` | keep: `skills/disabled/ecosystem-clarity/SKILL.md` | group_size=4
+- archive: `qwen_superpowers/skills/finishing-a-development-branch/SKILL.md` | keep: `skills/finishing-a-development-branch/SKILL.md` | group_size=5
+- archive: `qwen_superpowers/skills/receiving-code-review/SKILL.md` | keep: `skills/receiving-code-review/SKILL.md` | group_size=5
+- archive: `qwen_superpowers/skills/requesting-code-review/SKILL.md` | keep: `skills/requesting-code-review/SKILL.md` | group_size=5
+- archive: `qwen_superpowers/skills/requesting-code-review/code-reviewer.md` | keep: `skills/disabled/requesting-code-review/code-reviewer.md` | group_size=7
+- archive: `qwen_superpowers/skills/subagent-driven-development/code-quality-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/code-quality-reviewer-prompt.md` | group_size=7
+- archive: `qwen_superpowers/skills/subagent-driven-development/implementer-prompt.md` | keep: `skills/disabled/subagent-driven-development/implementer-prompt.md` | group_size=7
+- archive: `qwen_superpowers/skills/subagent-driven-development/spec-reviewer-prompt.md` | keep: `skills/disabled/subagent-driven-development/spec-reviewer-prompt.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/CREATION-LOG.md` | keep: `skills/systematic-debugging/CREATION-LOG.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/SKILL.md` | keep: `skills/systematic-debugging/SKILL.md` | group_size=4
+- archive: `qwen_superpowers/skills/systematic-debugging/condition-based-waiting-example.ts` | keep: `skills/systematic-debugging/condition-based-waiting-example.ts` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/condition-based-waiting.md` | keep: `skills/systematic-debugging/condition-based-waiting.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/defense-in-depth.md` | keep: `skills/systematic-debugging/defense-in-depth.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/find-polluter.sh` | keep: `skills/systematic-debugging/find-polluter.sh` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/root-cause-tracing.md` | keep: `skills/systematic-debugging/root-cause-tracing.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/test-academic.md` | keep: `skills/systematic-debugging/test-academic.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/test-pressure-1.md` | keep: `skills/systematic-debugging/test-pressure-1.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/test-pressure-2.md` | keep: `skills/systematic-debugging/test-pressure-2.md` | group_size=7
+- archive: `qwen_superpowers/skills/systematic-debugging/test-pressure-3.md` | keep: `skills/systematic-debugging/test-pressure-3.md` | group_size=7
+- archive: `qwen_superpowers/skills/test-driven-development/SKILL.md` | keep: `skills/test-driven-development/SKILL.md` | group_size=4
+- archive: `qwen_superpowers/skills/test-driven-development/testing-anti-patterns.md` | keep: `skills/test-driven-development/testing-anti-patterns.md` | group_size=7
+- archive: `qwen_superpowers/skills/using-superpowers/references/codex-tools.md` | keep: `skills/using-superpowers/references/codex-tools.md` | group_size=6
+- archive: `qwen_superpowers/skills/using-superpowers/references/copilot-tools.md` | keep: `skills/using-superpowers/references/copilot-tools.md` | group_size=6
+- archive: `qwen_superpowers/skills/using-superpowers/references/gemini-tools.md` | keep: `skills/using-superpowers/references/gemini-tools.md` | group_size=6
+- archive: `qwen_superpowers/skills/verification-before-completion/SKILL.md` | keep: `skills/verification-before-completion/SKILL.md` | group_size=4
+- archive: `qwen_superpowers/skills/writing-skills/anthropic-best-practices.md` | keep: `skills/disabled/writing-skills/anthropic-best-practices.md` | group_size=7
+- archive: `qwen_superpowers/skills/writing-skills/examples/CLAUDE_MD_TESTING.md` | keep: `skills/disabled/writing-skills/examples/CLAUDE_MD_TESTING.md` | group_size=7
+- archive: `qwen_superpowers/skills/writing-skills/graphviz-conventions.dot` | keep: `skills/disabled/writing-skills/graphviz-conventions.dot` | group_size=7
+- archive: `qwen_superpowers/skills/writing-skills/persuasion-principles.md` | keep: `skills/disabled/writing-skills/persuasion-principles.md` | group_size=7
+- archive: `qwen_superpowers/skills/writing-skills/render-graphs.js` | keep: `skills/disabled/writing-skills/render-graphs.js` | group_size=7
+- archive: `qwen_superpowers/skills/writing-skills/testing-skills-with-subagents.md` | keep: `skills/disabled/writing-skills/testing-skills-with-subagents.md` | group_size=4

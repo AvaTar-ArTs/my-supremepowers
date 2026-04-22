@@ -1,0 +1,24 @@
+# Qwen Self-Management Plugin
+
+## Description
+A plugin to help Qwen manage its own capabilities, tasks, and context during conversations.
+
+## Capabilities
+- Self-task management
+- Context preservation
+- Information organization
+- Conversation continuity
+- Skill coordination
+
+## Commands
+- /qwen:status - Check current status and capabilities
+- /qwen:tasks - View current tasks and objectives
+- /qwen:context - Summarize current context
+- /qwen:skills - List available skills
+- /qwen:plugins - List active plugins
+
+## Usage
+This plugin helps Qwen maintain better organization and continuity during complex conversations and multi-step tasks.
+
+## Configuration
+The plugin operates automatically to maintain context and task management during conversations.

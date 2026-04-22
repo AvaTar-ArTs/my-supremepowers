@@ -1,0 +1,24 @@
+description = "Run adaptive style loop: analyze, learn, adapt, implement"
+prompt = """
+Run the adaptive style loop for this request:
+
+1) Analyze current structure, behavior, and drift.
+2) Learn what should become persistent operational memory.
+3) Adapt host-specific command/bootstrap surfaces without changing core policy intent.
+4) Implement minimal, verifiable updates.
+
+Request:
+${input}
+"""
+
+[[context]]
+type = "file"
+path = "docs/ADAPTIVE_STYLE_IMPLEMENTATION.md"
+
+[[context]]
+type = "file"
+path = "skills/using-superpowers/SKILL.md"
+
+[[context]]
+type = "file"
+path = "skills/workflow-bootstrap/SKILL.md"

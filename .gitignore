@@ -1,0 +1,25 @@
+# OS/runtime noise
+.DS_Store
+*.log
+__pycache__/
+
+# Local secrets/state
+.qwen_env
+qwen_google_accounts.json
+qwen_settings.json
+oauth_creds.json
+.env
+.env.*
+
+# Python/node caches
+.venv/
+venv/
+node_modules/
+
+# Sensitive local AI runtime state
+qwen_projects/
+qwen_debug/
+qwen_google_accounts.json
+qwen_settings.json
+.qwen_env
+oauth_creds.json

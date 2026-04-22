@@ -1,0 +1,13 @@
+.worktrees/
+.private-journal/
+.claude/
+
+# Build / deps / caches (from former codex bundle .gitignore)
+node_modules/
+dist/
+build/
+coverage/
+*.log
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,18 @@
+What "hooks" mean in this system
+
+In superpowers-codex, there are no event hooks in code (like preTool/postTool scripts).
+Instead, it uses a bootstrap hook pattern via instructions:
+
+- AGENTS.md tells Codex to run bootstrap at session start.
+- bootstrap then:
+  1) prints superpowers rules
+  2) lists skills
+  3) auto-loads superpowers:using-superpowers
+
+So the "hook" is operational/prompt-level, not a low-level runtime callback.
+
+Commands that behave like hook entrypoints:
+
+- superpowers-codex bootstrap -> session-start hook
+- superpowers-codex find-skills -> discovery stage
+- superpowers-codex use-skill <name> -> per-task hook

@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "orchestration": {
+    "agentActivationThreshold": 8,
+    "detectionSensitivity": "medium",
+    "fallbackToLLM": true,
+    "maxAgentsPerRequest": 3
+  },
+  "skills": {
+    "exposureMode": "commands",
+    "generateAliases": true,
+    "customSkillsPath": "~/.supremepower/skills"
+  },
+  "agents": {
+    "customAgentsPath": "~/.supremepower/agents",
+    "personaDetail": "full",
+    "autoCreate": {
+      "enabled": true,
+      "confirmBeforeSave": true,
+      "template": "standard"
+    }
+  },
+  "display": {
+    "showActivatedAgents": true,
+    "verbose": false,
+    "logPath": "~/.supremepower/logs"
+  },
+  "wrapper": {
+    "enabled": true,
+    "complexity": {
+      "minWordCount": 50,
+      "requireKeywords": true,
+      "checkCodeBlocks": true
+    }
+  }
+}

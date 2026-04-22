@@ -1,0 +1,14 @@
+Source material snapshot
+
+Original path:
+- `/Users/steven/.qwen/get-hooked.txt`
+
+Notes:
+- The original file captures a long interactive transcript and repeated evolution passes.
+- It includes the initial hook-concept request, deep-dive findings, and iterative doc normalization work.
+- This workspace keeps a compact, operational snapshot and shifts dense narrative into findings docs.
+
+Key preserved intent:
+- Explore hooks deeply
+- Distinguish bootstrap hooks vs runtime hooks
+- Apply findings into practical architecture and functioning files

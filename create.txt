@@ -1,0 +1,295 @@
+ Copying items from ~/.qwen:
+
+   1. Copy /Users/steven/.qwen/code-review/ to
+      /Users/steven/my-supremepowers/qwen_code-review/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's code-review directory.                           │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ code-review/ copied.
+
+   2. Copy /Users/steven/.qwen/debug/ to
+      /Users/steven/my-supremepowers/qwen_debug/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's debug directory.                                 │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ debug/ copied.
+
+   3. Copy /Users/steven/.qwen/docs/ to
+      /Users/steven/my-supremepowers/qwen_docs/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's docs directory.                                  │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ docs/ copied.
+
+   4. Copy /Users/steven/.qwen/integrations/ to
+      /Users/steven/my-supremepowers/qwen_integrations/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's integrations directory.                          │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ integrations/ copied.
+
+   5. Copy /Users/steven/.qwen/plans/ to
+      /Users/steven/my-supremepowers/qwen_plans/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's plans directory.                                 │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ plans/ copied.
+
+   6. Copy /Users/steven/.qwen/projects/ to
+      /Users/steven/my-supremepowers/qwen_projects/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's projects directory.                              │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ projects/ copied.
+
+   7. Copy /Users/steven/.qwen/security-guidance/ to
+      /Users/steven/my-supremepowers/qwen_security-guidance/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's security-guidance directory.                     │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ security-guidance/ copied.
+
+   8. Copy /Users/steven/.qwen/templates/ to
+      /Users/steven/my-supremepowers/qwen_templates/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's templates directory.                             │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ templates/ copied.
+
+   9. Copy /Users/steven/.qwen/ECOSYSTEM_ANALYSIS.md to
+      /Users/steven/my-supremepowers/qwen_ECOSYSTEM_ANALYSIS.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's ECOSYSTEM_ANALYSIS.md.                           │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ ECOSYSTEM_ANALYSIS.md copied.
+
+   10. Copy /Users/steven/.qwen/IMPORT_MANIFEST.md to
+       /Users/steven/my-supremepowers/qwen_IMPORT_MANIFEST.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's IMPORT_MANIFEST.md.                              │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ IMPORT_MANIFEST.md copied.
+
+   11. Copy /Users/steven/.qwen/INTEGRATION_SUMMARY.md to
+       /Users/steven/my-supremepowers/qwen_INTEGRATION_SUMMARY.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's INTEGRATION_SUMMARY.md.                          │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ INTEGRATION_SUMMARY.md copied.
+
+   12. Copy /Users/steven/.qwen/Learning_Explanatory_Styles.md to
+       /Users/steven/my-supremepowers/qwen_Learning_Explanatory_Styles.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's Learning_Explanatory_Styles.md.                  │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ Learning_Explanatory_Styles.md copied.
+
+   13. Copy /Users/steven/.qwen/Logic_Flows.md to
+       /Users/steven/my-supremepowers/qwen_Logic_Flows.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's Logic_Flows.md.                                  │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ Logic_Flows.md copied.
+
+   14. Copy /Users/steven/.qwen/Master_Recall_Index.md to
+       /Users/steven/my-supremepowers/qwen_Master_Recall_Index.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's Master_Recall_Index.md.                          │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ Master_Recall_Index.md copied.
+
+   15. Copy /Users/steven/.qwen/output-language.md to
+       /Users/steven/my-supremepowers/qwen_output-language.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's output-language.md.                              │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ output-language.md copied.
+
+   16. Copy /Users/steven/.qwen/PROJECT_SUMMARY.md to
+       /Users/steven/my-supremepowers/qwen_PROJECT_SUMMARY.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's PROJECT_SUMMARY.md.                              │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ PROJECT_SUMMARY.md copied.
+
+   17. Copy /Users/steven/.qwen/QWEN_INVOKE_INDEX_BY_TYPE.md to
+       /Users/steven/my-supremepowers/qwen_QWEN_INVOKE_INDEX_BY_TYPE.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's QWEN_INVOKE_INDEX_BY_TYPE.md.                    │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ QWEN_INVOKE_INDEX_BY_TYPE.md copied.
+
+   18. Copy /Users/steven/.qwen/QWEN_SYSTEM_DEFINITION.md to
+       /Users/steven/my-supremepowers/qwen_QWEN_SYSTEM_DEFINITION.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's QWEN_SYSTEM_DEFINITION.md.                       │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ QWEN_SYSTEM_DEFINITION.md copied.
+
+   19. Copy /Users/steven/.qwen/QWEN.md to
+       /Users/steven/my-supremepowers/qwen_QWEN.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's QWEN.md.                                         │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ QWEN.md copied.
+
+   20. Copy /Users/steven/.qwen/settings.json to
+       /Users/steven/my-supremepowers/qwen_settings.json
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's settings.json.                                   │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ settings.json copied.
+
+   21. Copy /Users/steven/.qwen/Use_Cases_And_Triggers.md to
+       /Users/steven/my-supremepowers/qwen_Use_Cases_And_Triggers.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's Use_Cases_And_Triggers.md.                       │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ Use_Cases_And_Triggers.md copied.
+
+   22. Copy /Users/steven/.qwen/Working_Principles.md to
+       /Users/steven/my-supremepowers/qwen_Working_Principles.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Qwen's Working_Principles.md.                           │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ Working_Principles.md copied.
+
+  Copying items from ~/.gemini:
+
+   23. Copy /Users/steven/.gemini/docs/ to
+       /Users/steven/my-supremepowers/gemini_docs/
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Gemini's docs directory.                                │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ docs/ copied as gemini_docs/.
+
+   24. Copy /Users/steven/.gemini/GIT_AI.md to
+       /Users/steven/my-supremepowers/gemini_GIT_AI.md
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Gemini's GIT_AI.md.                                     │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ GIT_AI.md copied.
+
+   25. Copy /Users/steven/.gemini/projects.json to
+       /Users/steven/my-supremepowers/gemini_projects.json
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Gemini's projects.json.                                 │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ projects.json copied as gemini_projects.json.
+
+   26. Copy /Users/steven/.gemini/XEO-DEO UNIVERSAL CONSTITUTION (V3.4).md to
+       /Users/steven/my-supremepowers/gemini_XEO-DEO_UNIVERSAL_CONSTITUTION.m
+       d
+
+╭───────────────────────────────────────────────────────────────────────╮
+│ ✓  Shell Copy Gemini's constitutional document.                       │
+│                                                                       │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+✦ XEO-DEO UNIVERSAL CONSTITUTION (V3.4).md copied.
+
+   27. Copy /Users/steven/.gemini/XEO-DEO UNIVERSAL CONSTITUTION
+       (V3.4)BACKUP.md to
+       /Users/steven/my-supremepowers/gemini_XEO-DEO_UNIVERSAL_CONSTITUTION_B
+       ACKUP.md

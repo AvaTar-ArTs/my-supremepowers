@@ -1,0 +1,20 @@
+{
+  "name": "ability-dna",
+  "version": "1.0.0",
+  "description": "Semantic discovery for your custom Python library based on Ability DNA.",
+  "mcpServers": [
+    {
+      "id": "ability-dna",
+      "command": "python3",
+      "args": ["${extensionPath}/mcp-server/ability_dna_mcp.py"],
+      "transport": "stdio"
+    }
+  ],
+  "commands": [
+    {
+      "name": "dna:search",
+      "description": "Search for scripts by functions or abilities",
+      "prompt": "Use the ability-dna mcp server to find tools matching: {{query}}"
+    }
+  ]
+}

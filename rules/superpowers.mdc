@@ -1,0 +1,56 @@
+---
+description: Obra Superpowers skills in ~/.cursor/skills (symlinked to ~/iterm2/superpowers); Codex CLI, agent_ops handoffs, brainstorm→plan→TDD chain, and *.d config drops.
+alwaysApply: true
+---
+
+# Superpowers (global Cursor setup)
+
+## Where the skills live
+
+Each Superpowers skill is a **directory under `~/.cursor/skills/<skill-name>/`** containing `SKILL.md` (and optional refs). These entries are **symlinks** to **`~/iterm2/superpowers/skills/<skill-name>/`** — single source of truth in the iterm2 repo.
+
+When a task matches a skill’s **description** in frontmatter, **read and follow that `SKILL.md`** (mandatory discipline per **`using-superpowers`**).
+
+## Default workflow for new work
+
+1. **`brainstorming`** — refine intent, options, design; get approval before implementation.
+2. **`writing-plans`** — after design approval, bite-sized tasks with verification.
+3. **`test-driven-development`** — red → green → refactor.
+4. **`requesting-code-review`**, **`verification-before-completion`**, **`finishing-a-development-branch`** as the task requires.
+
+For parallel work: **`dispatching-parallel-agents`**, **`subagent-driven-development`**, **`executing-plans`**. For debugging: **`systematic-debugging`**. Meta: **`writing-skills`**.
+
+## Codex / terminal (`superpowers-codex`)
+
+Ensure **`~/.codex/superpowers`** points at **`~/iterm2/superpowers`** so skills resolve under `~/.codex/superpowers/skills/`.
+
+```bash
+node ~/iterm2/superpowers-codex-product/bin/superpowers-codex find-skills
+node ~/iterm2/superpowers-codex-product/bin/superpowers-codex use-skill superpowers:using-superpowers
+node ~/iterm2/superpowers-codex-product/bin/superpowers-codex use-skill superpowers:brainstorming
+```
+
+For install/update from upstream, use the **`install-superpowers-for-codex`** skill or Obra’s `.codex/INSTALL.md`.
+
+## Agent handoffs (`agent_ops`)
+
+```bash
+PYTHONPATH=~/iterm2 /usr/local/bin/python3.12 ~/iterm2/scripts/agent_ops_handoff.py \
+  --out-dir <project>/docs/agent_ops/handoffs --max-events 300
+```
+
+Use any project directory for `<project>`; events are read from **`~/.agent_ops/events.jsonl`** by default.
+
+## `*.d`-style directories
+
+| Pattern | Use |
+|--------|-----|
+| **`~/.env.d/*.env`** | Modular env snippets; source from shell profile. Do not commit secrets. |
+| **`/etc/paths.d/`** (macOS) | Extra PATH entries. |
+| Tool-specific **`<app>.d`**| Prefer vendor docs for load order. |
+
+Keep API keys and tokens out of repo trees; use user-level drops or secret stores.
+
+## Do not use for skills
+
+**`~/.cursor/skills-cursor/`** is reserved for Cursor-built-in skills only — never add Superpowers there.

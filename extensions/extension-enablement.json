@@ -1,0 +1,87 @@
+{
+  "code-review": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "skill-porter": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "ComputerUse": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "agent-creator": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "run-long-command": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "extension-browser": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "ability-dna": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "upwork-intelligence": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "gemini-cli-git": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "refactor": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "my-code-analyzer": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "supremepower": {
+    "overrides": [
+      "/Users/steven/iterm2/*"
+    ]
+  },
+  "boring": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "mcp-toolbox-for-databases": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "mcp-toolbox": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "gemini-cli-prompt-library": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  },
+  "apify-agent-skills": {
+    "overrides": [
+      "!/Users/steven/*"
+    ]
+  }
+}

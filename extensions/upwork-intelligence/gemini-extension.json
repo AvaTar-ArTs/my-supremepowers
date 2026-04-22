@@ -1,0 +1,20 @@
+{
+  "name": "upwork-intelligence",
+  "version": "1.0.0",
+  "description": "Intelligent job matching and proposal drafting for Upwork.",
+  "mcpServers": [
+    {
+      "id": "upwork-intelligence",
+      "command": "python3",
+      "args": ["${extensionPath}/mcp-server/upwork_intelligence_mcp.py"],
+      "transport": "stdio"
+    }
+  ],
+  "commands": [
+    {
+      "name": "upwork:draft",
+      "description": "Draft a custom Upwork proposal",
+      "prompt": "Use the upwork-intelligence mcp server to draft a proposal for this job: {{job_description}}"
+    }
+  ]
+}

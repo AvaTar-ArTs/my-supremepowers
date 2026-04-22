@@ -1,0 +1,363 @@
+#!/bin/bash
+# qwen-backup — Comprehensive Qwen ecosystem backup to /Volumes/macBaks
+#
+# Usage:
+#   qwen-backup              # Full backup (all dirs + skills + agents)
+#   qwen-backup quick        # Quick backup (only active skills + agents + config)
+#   qwen-backup verify       # Verify latest backup integrity
+#   qwen-backup list         # List all backups
+#   qwen-backup restore <n>  # Restore from backup #N (latest=0)
+
+set -euo pipefail
+
+BACKUP_ROOT="/Volumes/macBaks/qwen-backup"
+QWEN_DIR="$HOME/.qwen"
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+BACKUP_DIR="$BACKUP_ROOT/$TIMESTAMP"
+
+# Directories to backup (full)
+FULL_DIRS=(
+    "agents"
+    "skills"
+    "superpowers/skills"
+    "commands"
+    "rules"
+    "scripts"
+    "plugins"
+    "hookify"
+    "integrations"
+    "docs"
+    "plans"
+    "explanatory-output-style/latest"
+    "learning-output-style/latest"
+)
+
+# Exclusion patterns
+EXCLUDE_PATTERNS=(
+    ".DS_Store"
+    "__pycache__"
+    "node_modules"
+    ".git"
+    "*.zip"
+    "*.tar.gz"
+    "oauth_creds.json"
+    "google_accounts.json"
+    "settings.json.backup"
+    "settings.json.orig"
+    "settings.json.bak"
+)
+
+# ============================================================
+# Helper: Build rsync exclude args
+# ============================================================
+build_excludes() {
+    local args=""
+    for pattern in "${EXCLUDE_PATTERNS[@]}"; do
+        args="$args --exclude=$pattern"
+    done
+    echo "$args"
+}
+
+# ============================================================
+# Command: Full backup
+# ============================================================
+run_backup() {
+    echo "🔄 Qwen Ecosystem Backup"
+    echo "========================="
+    echo "Source: $QWEN_DIR"
+    echo "Destination: $BACKUP_DIR"
+    echo ""
+
+    # Verify destination
+    if [[ ! -d "$BACKUP_ROOT" ]]; then
+        echo "❌ Backup root not found: $BACKUP_ROOT"
+        echo "Is /Volumes/macBaks mounted?"
+        exit 1
+    fi
+
+    mkdir -p "$BACKUP_DIR"
+
+    # Create manifest
+    echo "# Qwen Backup Manifest" > "$BACKUP_DIR/MANIFEST.md"
+    echo "Date: $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$BACKUP_DIR/MANIFEST.md"
+    echo "Source: $QWEN_DIR" >> "$BACKUP_DIR/MANIFEST.md"
+    echo "" >> "$BACKUP_DIR/MANIFEST.md"
+    echo "## Contents" >> "$BACKUP_DIR/MANIFEST.md"
+
+    # Backup each directory
+    local total_size=0
+    local total_files=0
+
+    for dir in "${FULL_DIRS[@]}"; do
+        src="$QWEN_DIR/$dir"
+        dst="$BACKUP_DIR/$dir"
+
+        if [[ -d "$src" ]]; then
+            echo "  📁 $dir"
+            mkdir -p "$(dirname "$dst")"
+
+            # Use rsync with excludes
+            eval rsync -a --delete $(build_excludes) "$src/" "$dst/"
+
+            # Count files and size
+            file_count=$(find "$dst" -type f 2>/dev/null | wc -l | tr -d ' ')
+            dir_size=$(du -sk "$dst" 2>/dev/null | cut -f1)
+            total_size=$((total_size + dir_size))
+            total_files=$((total_files + file_count))
+
+            echo "     → $file_count files, ${dir_size}KB" >> "$BACKUP_DIR/MANIFEST.md"
+        else
+            echo "  ⚠️  $dir (not found, skipping)"
+        fi
+    done
+
+    # Backup root-level files
+    echo "" >> "$BACKUP_DIR/MANIFEST.md"
+    echo "## Root-level Files" >> "$BACKUP_DIR/MANIFEST.md"
+    for file in QWEN.md AGENTS.md README.md settings.json; do
+        if [[ -f "$QWEN_DIR/$file" ]]; then
+            cp "$QWEN_DIR/$file" "$BACKUP_DIR/$file"
+            file_size=$(wc -c < "$QWEN_DIR/$file" | tr -d ' ')
+            echo "  $file ($file_size bytes)" >> "$BACKUP_DIR/MANIFEST.md"
+        fi
+    done
+
+    # Create latest symlink
+    ln -sf "$TIMESTAMP" "$BACKUP_ROOT/latest"
+
+    # Summary
+    echo ""
+    echo "✅ Backup Complete"
+    echo "  Files:   $total_files"
+    echo "  Size:    ${total_size}KB ($((total_size / 1024))MB)"
+    echo "  Location: $BACKUP_DIR"
+    echo "  Latest:   $BACKUP_ROOT/latest"
+    echo ""
+    echo "Manifest: $BACKUP_DIR/MANIFEST.md"
+}
+
+# ============================================================
+# Command: Quick backup (essential only)
+# ============================================================
+run_quick() {
+    echo "🔄 Qwen Quick Backup (essential only)"
+    echo "======================================"
+
+    mkdir -p "$BACKUP_DIR"
+
+    # Essential dirs only
+    QUICK_DIRS=("agents" "skills" "scripts" "settings.json" "QWEN.md")
+
+    for item in "${QUICK_DIRS[@]}"; do
+        src="$QWEN_DIR/$item"
+        dst="$BACKUP_DIR/$item"
+
+        if [[ -d "$src" ]]; then
+            echo "  📁 $item"
+            mkdir -p "$dst"
+            eval rsync -a $(build_excludes) "$src/" "$dst/"
+        elif [[ -f "$src" ]]; then
+            echo "  📄 $item"
+            cp "$src" "$dst"
+        fi
+    done
+
+    ln -sf "$TIMESTAMP" "$BACKUP_ROOT/latest"
+    echo "✅ Quick backup: $BACKUP_DIR"
+}
+
+# ============================================================
+# Command: Verify backup
+# ============================================================
+run_verify() {
+    local latest="$BACKUP_ROOT/latest"
+
+    if [[ ! -L "$latest" ]]; then
+        echo "❌ No latest backup found"
+        exit 1
+    fi
+
+    local target=$(readlink "$latest")
+    local backup_path="$BACKUP_ROOT/$target"
+
+    echo "🔍 Verifying backup: $target"
+    echo ""
+
+    if [[ ! -d "$backup_path" ]]; then
+        echo "❌ Backup directory missing"
+        exit 1
+    fi
+
+    # Check manifest
+    if [[ -f "$backup_path/MANIFEST.md" ]]; then
+        echo "✅ Manifest found"
+        cat "$backup_path/MANIFEST.md"
+    else
+        echo "⚠️  No manifest"
+    fi
+
+    # Check essential files
+    echo ""
+    echo "Checking essential files:"
+    for dir in agents skills scripts; do
+        if [[ -d "$backup_path/$dir" ]]; then
+            count=$(find "$backup_path/$dir" -type f 2>/dev/null | wc -l | tr -d ' ')
+            echo "  ✅ $dir ($count files)"
+        else
+            echo "  ❌ $dir (missing)"
+        fi
+    done
+
+    # Check settings
+    for file in QWEN.md AGENTS.md settings.json; do
+        if [[ -f "$backup_path/$file" ]]; then
+            echo "  ✅ $file"
+        else
+            echo "  ❌ $file (missing)"
+        fi
+    done
+}
+
+# ============================================================
+# Command: List backups
+# ============================================================
+run_list() {
+    echo "📋 Qwen Backups"
+    echo "==============="
+    echo ""
+
+    if [[ ! -d "$BACKUP_ROOT" ]]; then
+        echo "No backups found. Run 'qwen-backup' to create one."
+        exit 0
+    fi
+
+    local count=0
+    for backup_dir in "$BACKUP_ROOT"/*/; do
+        [[ -d "$backup_dir" ]] || continue
+        [[ -L "$backup_dir" ]] && continue  # Skip symlinks
+
+        local name=$(basename "$backup_dir")
+        local size=$(du -sh "$backup_dir" 2>/dev/null | cut -f1)
+        local files=$(find "$backup_dir" -type f 2>/dev/null | wc -l | tr -d ' ')
+        local is_latest="  "
+
+        if [[ -L "$BACKUP_ROOT/latest" ]]; then
+            local latest_target=$(readlink "$BACKUP_ROOT/latest")
+            if [[ "$name" == "$latest_target" ]]; then
+                is_latest="← latest"
+            fi
+        fi
+
+        echo "  $count  $name  ($size, $files files) $is_latest"
+        count=$((count + 1))
+    done
+
+    if [[ $count -eq 0 ]]; then
+        echo "  No backups found."
+    fi
+}
+
+# ============================================================
+# Command: Restore from backup
+# ============================================================
+run_restore() {
+    local backup_num="${1:-0}"
+
+    echo "🔄 Restore Qwen from backup"
+    echo "==========================="
+
+    if [[ ! -d "$BACKUP_ROOT" ]]; then
+        echo "❌ No backups found"
+        exit 1
+    fi
+
+    # Find the Nth backup (0 = latest)
+    local target
+    if [[ "$backup_num" == "0" ]] && [[ -L "$BACKUP_ROOT/latest" ]]; then
+        target=$(readlink "$BACKUP_ROOT/latest")
+    else
+        local count=0
+        for backup_dir in "$BACKUP_ROOT"/*/; do
+            [[ -d "$backup_dir" ]] || continue
+            [[ -L "$backup_dir" ]] && continue
+            if [[ $count -eq $backup_num ]]; then
+                target=$(basename "$backup_dir")
+                break
+            fi
+            count=$((count + 1))
+        done
+    fi
+
+    if [[ -z "$target" ]]; then
+        echo "❌ Backup #$backup_num not found"
+        exit 1
+    fi
+
+    local backup_path="$BACKUP_ROOT/$target"
+    echo "Restoring from: $target"
+    echo "To: $QWEN_DIR"
+    echo ""
+    echo "⚠️  This will OVERWRITE your current Qwen files!"
+    echo "    A snapshot will be saved first."
+
+    # Create snapshot of current state
+    local snapshot_dir="$BACKUP_ROOT/pre-restore-$(date +%Y%m%d_%H%M%S)"
+    mkdir -p "$snapshot_dir"
+    echo "  📸 Snapshot saved to: $snapshot_dir"
+
+    for dir in agents skills scripts commands rules; do
+        if [[ -d "$QWEN_DIR/$dir" ]]; then
+            rsync -a "$QWEN_DIR/$dir/" "$snapshot_dir/$dir/"
+        fi
+    done
+
+    # Restore
+    echo "  Restoring files..."
+    for item in "$backup_path"/*/; do
+        [[ -d "$item" ]] || continue
+        local name=$(basename "$item")
+        mkdir -p "$QWEN_DIR/$name"
+        rsync -a "$item" "$QWEN_DIR/$name/"
+        echo "    ✅ $name"
+    done
+
+    # Restore root files
+    for file in QWEN.md AGENTS.md settings.json; do
+        if [[ -f "$backup_path/$file" ]]; then
+            cp "$backup_path/$file" "$QWEN_DIR/$file"
+            echo "    ✅ $file"
+        fi
+    done
+
+    echo ""
+    echo "✅ Restore complete from $target"
+    echo "   Pre-restore snapshot: $snapshot_dir"
+}
+
+# ============================================================
+# Main CLI
+# ============================================================
+COMMAND="${1:-backup}"
+
+case "$COMMAND" in
+    backup|"") run_backup ;;
+    quick)     run_quick ;;
+    verify)    run_verify ;;
+    list)      run_list ;;
+    restore)   run_restore "${2:-0}" ;;
+    help|--help|-h)
+        echo "Qwen Ecosystem Backup Tool"
+        echo ""
+        echo "Usage:"
+        echo "  qwen-backup              # Full backup"
+        echo "  qwen-backup quick        # Quick backup (essential only)"
+        echo "  qwen-backup verify       # Verify latest backup"
+        echo "  qwen-backup list         # List all backups"
+        echo "  qwen-backup restore [N]  # Restore from backup #N (default=latest)"
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo "Run 'qwen-backup help' for usage."
+        exit 1
+        ;;
+esac

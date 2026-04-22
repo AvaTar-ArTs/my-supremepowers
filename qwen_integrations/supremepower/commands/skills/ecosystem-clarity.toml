@@ -1,0 +1,10 @@
+description = "Cross-ecosystem clarity map for Qwen/Cursor/Gemini/Codex coordination"
+prompt = """
+I'm using the ecosystem-clarity skill to align architecture, ownership, and execution paths before implementation.
+
+${input}
+"""
+
+[[context]]
+type = "file"
+path = "skills/ecosystem-clarity/SKILL.md"

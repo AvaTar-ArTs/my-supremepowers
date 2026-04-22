@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""Convert workspace-ecosystem-audit inventory JSON into a queryable SQLite DB."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sqlite3
+from pathlib import Path
+
+
+SCHEMA = """
+PRAGMA journal_mode=WAL;
+CREATE TABLE IF NOT EXISTS inventory_meta (
+  key TEXT PRIMARY KEY,
+  value TEXT
+);
+CREATE TABLE IF NOT EXISTS entries (
+  id INTEGER PRIMARY KEY,
+  parent_id INTEGER,
+  type TEXT NOT NULL,
+  path TEXT NOT NULL,
+  path_prefix TEXT,
+  name TEXT,
+  ext TEXT,
+  size_bytes INTEGER,
+  mtime_iso TEXT,
+  is_hidden INTEGER,
+  hash_sha1 TEXT,
+  preview TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_entries_path ON entries(path);
+CREATE INDEX IF NOT EXISTS idx_entries_prefix ON entries(path_prefix);
+CREATE INDEX IF NOT EXISTS idx_entries_type ON entries(type);
+CREATE INDEX IF NOT EXISTS idx_entries_ext ON entries(ext);
+CREATE INDEX IF NOT EXISTS idx_entries_size ON entries(size_bytes);
+CREATE INDEX IF NOT EXISTS idx_entries_name ON entries(name);
+"""
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("inventory_json", type=Path)
+    parser.add_argument("output_db", type=Path)
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    data = json.loads(args.inventory_json.read_text())
+    entries = data.get("entries", [])
+
+    args.output_db.parent.mkdir(parents=True, exist_ok=True)
+    if args.output_db.exists():
+        args.output_db.unlink()
+
+    with sqlite3.connect(args.output_db) as con:
+        con.executescript(SCHEMA)
+        con.executemany(
+            "INSERT INTO inventory_meta(key, value) VALUES (?, ?)",
+            [
+                ("source_json", str(args.inventory_json)),
+                ("generated_at", str(data.get("generated_at", ""))),
+                ("roots", json.dumps(data.get("roots", []))),
+                ("max_hash_bytes", str(data.get("max_hash_bytes", ""))),
+                ("max_preview_bytes", str(data.get("max_preview_bytes", ""))),
+                ("entry_count", str(len(entries))),
+            ],
+        )
+        con.executemany(
+            """
+            INSERT INTO entries(
+              id, parent_id, type, path, path_prefix, name, ext, size_bytes,
+              mtime_iso, is_hidden, hash_sha1, preview
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                (
+                    item.get("id"),
+                    item.get("parent_id"),
+                    item.get("type"),
+                    item.get("path"),
+                    item.get("path_prefix"),
+                    item.get("name"),
+                    item.get("ext"),
+                    item.get("size_bytes"),
+                    item.get("mtime_iso"),
+                    1 if item.get("is_hidden") else 0,
+                    item.get("hash_sha1"),
+                    item.get("preview"),
+                )
+                for item in entries
+            ),
+        )
+        con.execute("PRAGMA optimize")
+
+    print(f"wrote {len(entries)} entries -> {args.output_db}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

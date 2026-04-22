@@ -1,0 +1,10 @@
+description = "Bootstrap mandatory workflow chain before creative or multi-step work"
+prompt = """
+I'm using the workflow-bootstrap skill to establish the required process before proceeding.
+
+${input}
+"""
+
+[[context]]
+type = "file"
+path = "skills/workflow-bootstrap/SKILL.md"

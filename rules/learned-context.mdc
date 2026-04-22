@@ -1,0 +1,18 @@
+---
+description: Read learned-context.md when continuing work; update it when we clarify, decide, or establish a pattern so back-and-forth gets learned in a cache-style way. See WORKING_PRINCIPLES § Learned context.
+alwaysApply: true
+---
+
+# Learned context (cache-style)
+
+**Read:** When responding in this workspace, read **`docs/learned-context.md`** and **`docs/conversation-link-map.md`** so prior terminology, decisions, patterns, and the conversation-derived reference net are in scope. Learned-context = cache of what we've established; conversation-link-map = nodes (key ideas) + edges (how they connect) + "when to surface" so nothing gets lost in rows of work.
+
+**Write:** When we **clarify** something (e.g. a term), **make a decision** (e.g. "always do X when Y"), or **establish a pattern** (e.g. "when I say Z, you do W"), add it to `docs/learned-context.md` in the right section:
+- **Terminology we've established**
+- **Decisions we've made**
+- **Patterns that work**
+- **Open / to revisit**
+
+User can say "add that to learned context" to make the write explicit. Otherwise add when it's clear we've learned something that should persist.
+
+**Full logic:** `docs/WORKING_PRINCIPLES.md` § Learned context (cache-style).

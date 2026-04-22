@@ -1,0 +1,350 @@
+#!/usr/bin/env bash
+# qwen-sp — Qwen Code Superpowers Orchestrator
+#
+# What this does (adapted from Gemini's gemini-sp):
+# 1. Lists all available superpowers + specialist agents
+# 2. Shows skill details for a specific skill
+# 3. Generates the bootstrap context for session injection
+# 4. Provides tool mapping reference for skills that reference other platforms' tools
+#
+# Usage:
+#   qwen-sp bootstrap          # Full bootstrap context (inject at session start)
+#   qwen-sp skills             # List all available skills with descriptions
+#   qwen-sp agents             # List all available specialist agents
+#   qwen-sp use <skill>        # Show a specific skill's full content
+#   qwen-sp map                # Show tool mapping reference
+#   qwen-sp status             # Show current setup status
+#
+# Adapted from: ~/.gemini/extensions/supremepower/scripts/gemini-sp
+#               ~/.gemini/extensions/supremepower/.codex/superpowers-codex
+
+set -euo pipefail
+
+# Determine script directory and project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+QWEN_DIR="$HOME/.qwen"
+SUPERPOWERS_SKILLS="$QWEN_DIR/superpowers/skills"
+SKILLS_DIR="$QWEN_DIR/skills"
+AGENTS_DIR="$QWEN_DIR/agents"
+INTEGRATION_DIR="$QWEN_DIR/integrations/supremepower"
+
+# ============================================================
+# Helper: Extract YAML frontmatter from a SKILL.md or agent.md
+# ============================================================
+extract_frontmatter() {
+    local file="$1"
+    local in_frontmatter=false
+    local name="" description=""
+
+    while IFS= read -r line; do
+        if [[ "$line" == "---" ]]; then
+            if $in_frontmatter; then
+                break
+            fi
+            in_frontmatter=true
+            continue
+        fi
+        if $in_frontmatter; then
+            if [[ "$line" =~ ^name:\ *(.*) ]]; then
+                name="${BASH_REMATCH[1]}"
+            elif [[ "$line" =~ ^description:\ *(.*) ]]; then
+                description="${BASH_REMATCH[1]}"
+            fi
+        fi
+    done < "$file"
+
+    echo "${name}|${description}"
+}
+
+# ============================================================
+# Command: bootstrap — Full session-start context
+# ============================================================
+run_bootstrap() {
+    cat <<'HEADER'
+# Qwen Superpowers Bootstrap
+
+<EXTREMELY_IMPORTANT>
+You have superpowers. Superpowers teach you new skills and capabilities.
+
+## Available Skill Categories:
+- **Superpowers skills** (17): brainstorming, writing-plans, executing-plans, TDD, systematic-debugging, etc.
+- **Regular skills** (44): agent-development, skill-creator, mcp-integration, etc.
+- **Specialist agents** (12): backend-architect, frontend-architect, security-engineer, etc.
+
+## How Skills Work in Qwen:
+- Use the `Skill` tool to load and apply skills by name
+- Skills are located in:
+  - Superpowers: ~/.qwen/superpowers/skills/<name>/SKILL.md
+  - Regular: ~/.qwen/skills/<name>/SKILL.md
+  - Agents: ~/.qwen/agents/<name>/agent.md
+
+## Critical Rules:
+- Before ANY creative or complex task, check if a relevant skill exists
+- If a skill exists, you MUST use it
+- NEVER skip mandatory workflows:
+  - brainstorming BEFORE any creative work
+  - writing-plans BEFORE multi-step implementation
+  - test-driven-development WHEN writing code
+  - systematic-debugging WHEN debugging
+  - verification-before-completion BEFORE claiming done
+
+## Tool Mapping (when skills reference other platform tools):
+- `TodoWrite` → Use the internal task tracking or structured todos in responses
+- `Task` tool with subagents → Use the Agent tool with appropriate subagent_type
+- `Skill` tool → Use the Skill tool (you already have it)
+- `Read/Write/Edit/Bash` → Use your native file tools
+- `update_plan` → Use structured task lists in responses
+
+IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE. YOU MUST USE IT.
+</EXTREMELY_IMPORTANT>
+HEADER
+
+    echo ""
+    echo "## Available Superpowers Skills:"
+    echo ""
+    for skill_dir in "$SUPERPOWERS_SKILLS"/*/; do
+        [[ -d "$skill_dir" ]] || continue
+        skill_file="$skill_dir/SKILL.md"
+        [[ -f "$skill_file" ]] || continue
+        meta=$(extract_frontmatter "$skill_file")
+        name=$(echo "$meta" | cut -d'|' -f1)
+        desc=$(echo "$meta" | cut -d'|' -f2-)
+        if [[ -n "$name" ]]; then
+            printf "  **superpowers:%s** — %s\n" "$name" "$desc"
+        fi
+    done
+
+    echo ""
+    echo "## Available Specialist Agents:"
+    echo ""
+    for agent_dir in "$AGENTS_DIR"/*/; do
+        [[ -d "$agent_dir" ]] || continue
+        agent_file="$agent_dir/agent.md"
+        [[ -f "$agent_file" ]] || continue
+        meta=$(extract_frontmatter "$agent_file")
+        name=$(echo "$meta" | cut -d'|' -f1)
+        desc=$(echo "$meta" | cut -d'|' -f2-)
+        if [[ -n "$name" ]]; then
+            printf "  **agent:%s** — %s\n" "$name" "$desc"
+        fi
+    done
+}
+
+# ============================================================
+# Command: skills — List all skills
+# ============================================================
+run_skills() {
+    echo "=== Available Superpowers Skills ==="
+    echo ""
+    for skill_dir in "$SUPERPOWERS_SKILLS"/*/; do
+        [[ -d "$skill_dir" ]] || continue
+        skill_file="$skill_dir/SKILL.md"
+        [[ -f "$skill_file" ]] || continue
+        meta=$(extract_frontmatter "$skill_file")
+        name=$(echo "$meta" | cut -d'|' -f1)
+        desc=$(echo "$meta" | cut -d'|' -f2-)
+        if [[ -n "$name" ]]; then
+            printf "%-40s %s\n" "$name" "$desc"
+        fi
+    done
+
+    echo ""
+    echo "=== Available Regular Skills ==="
+    echo ""
+    for skill_dir in "$SKILLS_DIR"/*/; do
+        [[ -d "$skill_dir" ]] || continue
+        skill_file="$skill_dir/SKILL.md"
+        [[ -f "$skill_file" ]] || continue
+        meta=$(extract_frontmatter "$skill_file")
+        name=$(echo "$meta" | cut -d'|' -f1)
+        desc=$(echo "$meta" | cut -d'|' -f2-)
+        if [[ -n "$name" ]]; then
+            printf "%-40s %s\n" "$name" "$desc"
+        fi
+    done
+}
+
+# ============================================================
+# Command: agents — List all specialist agents
+# ============================================================
+run_agents() {
+    echo "=== Available Specialist Agents ==="
+    echo ""
+    for agent_dir in "$AGENTS_DIR"/*/; do
+        [[ -d "$agent_dir" ]] || continue
+        agent_file="$agent_dir/agent.md"
+        [[ -f "$agent_file" ]] || continue
+        meta=$(extract_frontmatter "$agent_file")
+        name=$(echo "$meta" | cut -d'|' -f1)
+        desc=$(echo "$meta" | cut -d'|' -f2-)
+        if [[ -n "$name" ]]; then
+            printf "%-30s %s\n" "$name" "$desc"
+        fi
+    done
+}
+
+# ============================================================
+# Command: use <skill> — Show specific skill content
+# ============================================================
+run_use() {
+    local skill_name="$1"
+
+    # Try superpowers first
+    local skill_file="$SUPERPOWERS_SKILLS/$skill_name/SKILL.md"
+    if [[ -f "$skill_file" ]]; then
+        echo "# Superpowers Skill: $skill_name"
+        echo "# Location: $skill_file"
+        echo ""
+        cat "$skill_file"
+        return
+    fi
+
+    # Try regular skills
+    skill_file="$SKILLS_DIR/$skill_name/SKILL.md"
+    if [[ -f "$skill_file" ]]; then
+        echo "# Skill: $skill_name"
+        echo "# Location: $skill_file"
+        echo ""
+        cat "$skill_file"
+        return
+    fi
+
+    # Try agents
+    skill_file="$AGENTS_DIR/$skill_name/agent.md"
+    if [[ -f "$skill_file" ]]; then
+        echo "# Agent: $skill_name"
+        echo "# Location: $skill_file"
+        echo ""
+        cat "$skill_file"
+        return
+    fi
+
+    echo "Error: '$skill_name' not found in superpowers, skills, or agents."
+    echo ""
+    echo "Available locations:"
+    echo "  Superpowers: $SUPERPOWERS_SKILLS/"
+    echo "  Skills:      $SKILLS_DIR/"
+    echo "  Agents:      $AGENTS_DIR/"
+}
+
+# ============================================================
+# Command: map — Show tool mapping reference
+# ============================================================
+run_map() {
+    cat <<'EOF'
+# Qwen Superpowers — Tool Mapping Reference
+
+## Claude Code → Qwen Tool Mappings
+
+| Claude Code Tool | Qwen Equivalent | Notes |
+|-----------------|-----------------|-------|
+| `TodoWrite` | Structured response lists | No native todo tool; use markdown checklists in responses |
+| `Task` (subagents) | Agent tool | Use `agent` tool with subagent_type parameter |
+| `Skill` tool | Skill tool | Same concept, native support |
+| `Read` tool | read_file tool | Same functionality |
+| `Write` tool | write_file tool | Same functionality |
+| `Edit` tool | edit tool | Same functionality |
+| `Bash` tool | run_shell_command tool | Same functionality |
+| `Grep` tool | grep_search tool | Same functionality |
+| `Glob` tool | glob tool | Same functionality |
+
+## Gemini Supremepower → Qwen Mappings
+
+| Gemini Concept | Qwen Equivalent |
+|---------------|-----------------|
+| `/sp:agents` | `qwen-sp agents` |
+| `/sp:skills` | `qwen-sp skills` |
+| `gemini-sp` wrapper | Not needed — Qwen has native Skill/Agent tools |
+| Extension MCP server | Not needed — Qwen loads skills natively |
+
+## Codex Superpowers → Qwen Mappings
+
+| Codex Command | Qwen Equivalent |
+|--------------|-----------------|
+| `superpowers-codex bootstrap` | `qwen-sp bootstrap` |
+| `superpowers-codex find-skills` | `qwen-sp skills` |
+| `superpowers-codex use-skill <n>` | `qwen-sp use <n>` |
+
+## Skill-Specific Tool Requirements
+
+When skills reference tools, check this mapping first. If a skill
+requires a tool you don't have, adapt using the closest equivalent.
+EOF
+}
+
+# ============================================================
+# Command: status — Show setup status
+# ============================================================
+run_status() {
+    echo "=== Qwen Superpowers Setup Status ==="
+    echo ""
+
+    # Count skills
+    sp_count=$(find "$SUPERPOWERS_SKILLS" -name "SKILL.md" 2>/dev/null | wc -l | tr -d ' ')
+    skill_count=$(find "$SKILLS_DIR" -name "SKILL.md" 2>/dev/null | wc -l | tr -d ' ')
+    agent_count=$(find "$AGENTS_DIR" -name "agent.md" 2>/dev/null | wc -l | tr -d ' ')
+
+    echo "Superpowers Skills:  $sp_count (in $SUPERPOWERS_SKILLS)"
+    echo "Regular Skills:      $skill_count (in $SKILLS_DIR)"
+    echo "Specialist Agents:   $agent_count (in $AGENTS_DIR)"
+    echo ""
+
+    # Check integration files
+    if [[ -d "$INTEGRATION_DIR" ]]; then
+        echo "Supremepower Integration: ✅ ($INTEGRATION_DIR)"
+        ls -1 "$INTEGRATION_DIR" 2>/dev/null | while read item; do
+            echo "  ├── $item"
+        done
+    else
+        echo "Supremepower Integration: ❌ Not set up"
+    fi
+    echo ""
+
+    # Check hooks
+    hookify_dir="$QWEN_DIR/hookify"
+    if [[ -d "$hookify_dir" ]]; then
+        active_hooks=0
+        orphaned=0
+        for d in "$hookify_dir"/*/; do
+            [[ -d "$d" ]] || continue
+            if [[ -f "$d/.orphaned_at" ]]; then
+                orphaned=$((orphaned + 1))
+            else
+                active_hooks=$((active_hooks + 1))
+            fi
+        done
+        echo "Hookify Hooks: $active_hooks active, $orphaned orphaned"
+    fi
+}
+
+# ============================================================
+# Main CLI
+# ============================================================
+COMMAND="${1:-help}"
+
+case "$COMMAND" in
+    bootstrap)  run_bootstrap ;;
+    skills)     run_skills ;;
+    agents)     run_agents ;;
+    use)        run_use "${2:-}" ;;
+    map)        run_map ;;
+    status)     run_status ;;
+    help|--help|-h|"")
+        echo "Qwen Superpowers Orchestrator"
+        echo ""
+        echo "Usage:"
+        echo "  qwen-sp bootstrap          # Full bootstrap context"
+        echo "  qwen-sp skills             # List all skills"
+        echo "  qwen-sp agents             # List all agents"
+        echo "  qwen-sp use <skill>        # Show specific skill"
+        echo "  qwen-sp map                # Tool mapping reference"
+        echo "  qwen-sp status             # Setup status"
+        echo ""
+        echo "These replace the Gemini/Codex supremepower scripts for Qwen."
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo "Run 'qwen-sp help' for usage."
+        exit 1
+        ;;
+esac
