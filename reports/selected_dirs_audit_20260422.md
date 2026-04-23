@@ -1,0 +1,85 @@
+# Selected Directory Audit
+
+- `gemini_docs` | exists=True | files=10 | dirs=0 | size=0.07 MB | .DS_Store=0 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `gemini_docs/AGENT-HOOKS-RALPH-RESEARCH-AND-ASSESSMENT.md` (0.01 MB)
+    - `gemini_docs/PYTHON-PIP-SYSTEM-CHECK.md` (0.01 MB)
+    - `gemini_docs/MCPHOOKER-AUTOTAGGER-FOCUS.md` (0.01 MB)
+    - `gemini_docs/AGENTS-EXTENSIONS-POLICIES-REVIEW.md` (0.01 MB)
+    - `gemini_docs/HOME-ECOSYSTEM-INVENTORY.md` (0.01 MB)
+- `extensions` | exists=True | files=381 | dirs=134 | size=2.12 MB | .DS_Store=21 | .pyc=3 | empty-dirs=1
+  - largest files:
+    - `extensions/supremepower.bak.zip` (0.54 MB)
+    - `extensions/supremepower/docs/plans/2025-12-29-phase2-implementation.md` (0.06 MB)
+    - `extensions/supremepower/skills/writing-skills/anthropic-best-practices.md` (0.04 MB)
+    - `extensions/supremepower/core/skills/writing-skills/anthropic-best-practices.md` (0.04 MB)
+    - `extensions/supremepower/docs/phase2-summary.md` (0.03 MB)
+- `gemini_templates` | exists=True | files=0 | dirs=0 | size=0.0 MB | .DS_Store=0 | .pyc=0 | empty-dirs=1
+- `qwen_agents` | exists=True | files=46 | dirs=20 | size=0.18 MB | .DS_Store=1 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_agents/.DS_Store` (0.01 MB)
+    - `qwen_agents/SUBAGENTS_GUIDE.md` (0.01 MB)
+    - `qwen_agents/content-consolidator.md` (0.01 MB)
+    - `qwen_agents/documentation-manager.md` (0.01 MB)
+    - `qwen_agents/revenue-optimizer.md` (0.01 MB)
+- `qwen_benchmarks` | exists=True | files=1 | dirs=0 | size=0.0 MB | .DS_Store=0 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_benchmarks/README.md` (0.0 MB)
+- `qwen_code-review` | exists=True | files=3 | dirs=2 | size=0.02 MB | .DS_Store=1 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_code-review/2cd88e7947b7/commands/code-review.md` (0.01 MB)
+    - `qwen_code-review/2cd88e7947b7/README.md` (0.01 MB)
+    - `qwen_code-review/.DS_Store` (0.01 MB)
+- `qwen_debug` | exists=True | files=43 | dirs=0 | size=17.34 MB | .DS_Store=0 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_debug/db98322e-14d5-439e-aa6e-9db3a938c219.txt` (5.63 MB)
+    - `qwen_debug/902679b5-3272-4112-82de-f733035f445a.txt` (4.29 MB)
+    - `qwen_debug/db3d7dc1-6da2-4e70-8f0c-e6f567891e8c.txt` (3.71 MB)
+    - `qwen_debug/4b1c8316-d2df-4e67-a146-3606d826acec.txt` (0.75 MB)
+    - `qwen_debug/91b062d9-b6a0-4be5-a86d-4b82cdcbe231.txt` (0.61 MB)
+- `qwen_docs` | exists=True | files=31 | dirs=3 | size=0.21 MB | .DS_Store=2 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_docs/EVOLUTION_AND_ITEM_HISTORY.md` (0.03 MB)
+    - `qwen_docs/CHANGELOG.md` (0.02 MB)
+    - `qwen_docs/learned-context.md` (0.01 MB)
+    - `qwen_docs/evolution-changelogs/SYSTEM_SUMMARY.html` (0.01 MB)
+    - `qwen_docs/model-providers-free-and-byok.md` (0.01 MB)
+- `qwen_evaluations` | exists=True | files=0 | dirs=0 | size=0.0 MB | .DS_Store=0 | .pyc=0 | empty-dirs=1
+- `qwen_integrations` | exists=True | files=46 | dirs=35 | size=0.19 MB | .DS_Store=9 | .pyc=1 | empty-dirs=14
+  - largest files:
+    - `qwen_integrations/supremepower/skills/writing-skills/SKILL.md` (0.02 MB)
+    - `qwen_integrations/supremepower/skills/.DS_Store` (0.01 MB)
+    - `qwen_integrations/supremepower/skills/subagent-driven-development/SKILL.md` (0.01 MB)
+    - `qwen_integrations/supremepower/tests/claude-code/test-subagent-driven-development-integration.sh` (0.01 MB)
+    - `qwen_integrations/supremepower/tests/claude-code/__pycache__/analyze-token-usage.cpython-314.pyc` (0.01 MB)
+- `qwen_plans` | exists=True | files=0 | dirs=0 | size=0.0 MB | .DS_Store=0 | .pyc=0 | empty-dirs=1
+- `qwen_projects` | exists=True | files=94 | dirs=56 | size=273.97 MB | .DS_Store=2 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_projects/-Users-steven/chats/896fcea1-6016-4911-8ba2-d6bc7c6d6b60.jsonl` (42.69 MB)
+    - `qwen_projects/-Users-steven-iterm2/chats/55987f2e-52fe-409a-9551-a94d3abe0236.jsonl` (32.43 MB)
+    - `qwen_projects/-Users-steven-Music-nocTurneMeLoDieS/chats/af4d43d8-7c53-4530-8dba-cc5620e0c9b6.jsonl` (18.39 MB)
+    - `qwen_projects/-Users-steven/chats/ff458e17-0e04-433e-b5ee-12cc4ffb3e46.jsonl` (12.87 MB)
+    - `qwen_projects/-Users-steven-iterm2/chats/c35952af-198f-470e-a1f7-327126562cd4.jsonl` (8.4 MB)
+- `qwen_research` | exists=True | files=1 | dirs=0 | size=0.0 MB | .DS_Store=0 | .pyc=0 | empty-dirs=0
+  - largest files:
+    - `qwen_research/README.md` (0.0 MB)
+- `qwen_security-guidance` | exists=True | files=5 | dirs=3 | size=0.03 MB | .DS_Store=2 | .pyc=1 | empty-dirs=0
+  - largest files:
+    - `qwen_security-guidance/1.0.0/hooks/__pycache__/security_reminder_hook.cpython-314.pyc` (0.01 MB)
+    - `qwen_security-guidance/1.0.0/hooks/security_reminder_hook.py` (0.01 MB)
+    - `qwen_security-guidance/1.0.0/.DS_Store` (0.01 MB)
+    - `qwen_security-guidance/.DS_Store` (0.01 MB)
+    - `qwen_security-guidance/1.0.0/hooks/hooks.json` (0.0 MB)
+- `qwen_skills` | exists=True | files=64 | dirs=63 | size=0.55 MB | .DS_Store=4 | .pyc=0 | empty-dirs=4
+  - largest files:
+    - `qwen_skills/tooluniverse-clinical-trial-design/SKILL.md` (0.04 MB)
+    - `qwen_skills/skill-creator/SKILL.md` (0.03 MB)
+    - `qwen_skills/.DS_Store` (0.03 MB)
+    - `qwen_skills/tooluniverse/SKILL.md` (0.02 MB)
+    - `qwen_skills/skill-development/SKILL.md` (0.02 MB)
+
+## Totals
+- total size: 294.68 MB
+- total files: 725
+- total .DS_Store: 42
+- total .pyc: 5

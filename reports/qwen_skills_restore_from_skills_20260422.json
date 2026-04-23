@@ -1,0 +1,117 @@
+{
+  "restored_count": 22,
+  "unresolved_count": 0,
+  "restored": [
+    {
+      "qwen_skill": "devtu-fix-tool",
+      "source": "skills/devtu-fix-tool/SKILL.md",
+      "target": "qwen_skills/devtu-fix-tool/SKILL.md"
+    },
+    {
+      "qwen_skill": "devtu-optimize-descriptions",
+      "source": "skills/devtu-optimize-descriptions/SKILL.md",
+      "target": "qwen_skills/devtu-optimize-descriptions/SKILL.md"
+    },
+    {
+      "qwen_skill": "devtu-optimize-skills",
+      "source": "skills/devtu-optimize-skills/SKILL.md",
+      "target": "qwen_skills/devtu-optimize-skills/SKILL.md"
+    },
+    {
+      "qwen_skill": "setup-tooluniverse",
+      "source": "skills/setup-tooluniverse/SKILL.md",
+      "target": "qwen_skills/setup-tooluniverse/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-brainstorming",
+      "source": "skills/brainstorming/SKILL.md",
+      "target": "qwen_skills/superpowers-brainstorming/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-dispatching-parallel-agents",
+      "source": "skills/dispatching-parallel-agents/SKILL.md",
+      "target": "qwen_skills/superpowers-dispatching-parallel-agents/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-ecosystem-clarity",
+      "source": "skills/ecosystem-clarity/SKILL.md",
+      "target": "qwen_skills/superpowers-ecosystem-clarity/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-executing-plans",
+      "source": "skills/executing-plans/SKILL.md",
+      "target": "qwen_skills/superpowers-executing-plans/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-finishing-a-development-branch",
+      "source": "skills/finishing-a-development-branch/SKILL.md",
+      "target": "qwen_skills/superpowers-finishing-a-development-branch/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-receiving-code-review",
+      "source": "skills/receiving-code-review/SKILL.md",
+      "target": "qwen_skills/superpowers-receiving-code-review/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-requesting-code-review",
+      "source": "skills/requesting-code-review/SKILL.md",
+      "target": "qwen_skills/superpowers-requesting-code-review/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-subagent-driven-development",
+      "source": "skills/subagent-driven-development/SKILL.md",
+      "target": "qwen_skills/superpowers-subagent-driven-development/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-systematic-debugging",
+      "source": "skills/systematic-debugging/SKILL.md",
+      "target": "qwen_skills/superpowers-systematic-debugging/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-test-driven-development",
+      "source": "skills/test-driven-development/SKILL.md",
+      "target": "qwen_skills/superpowers-test-driven-development/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-using-git-worktrees",
+      "source": "skills/using-git-worktrees/SKILL.md",
+      "target": "qwen_skills/superpowers-using-git-worktrees/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-verification-before-completion",
+      "source": "skills/verification-before-completion/SKILL.md",
+      "target": "qwen_skills/superpowers-verification-before-completion/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-workflow-bootstrap",
+      "source": "skills/workflow-bootstrap/SKILL.md",
+      "target": "qwen_skills/superpowers-workflow-bootstrap/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-writing-plans",
+      "source": "skills/writing-plans/SKILL.md",
+      "target": "qwen_skills/superpowers-writing-plans/SKILL.md"
+    },
+    {
+      "qwen_skill": "superpowers-writing-skills",
+      "source": "skills/writing-skills/SKILL.md",
+      "target": "qwen_skills/superpowers-writing-skills/SKILL.md"
+    },
+    {
+      "qwen_skill": "tooluniverse",
+      "source": "skills/tooluniverse/SKILL.md",
+      "target": "qwen_skills/tooluniverse/SKILL.md"
+    },
+    {
+      "qwen_skill": "tooluniverse-clinical-trial-design",
+      "source": "skills/tooluniverse-clinical-trial-design/SKILL.md",
+      "target": "qwen_skills/tooluniverse-clinical-trial-design/SKILL.md"
+    },
+    {
+      "qwen_skill": "tooluniverse-sequence-retrieval",
+      "source": "skills/tooluniverse-sequence-retrieval/SKILL.md",
+      "target": "qwen_skills/tooluniverse-sequence-retrieval/SKILL.md"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,168 @@
+# Function-Safe Dedupe Preview (Dry Run)
+
+- Rule: remove only duplicate mirror copies under `qwen_*` when a non-`qwen_*` copy exists.
+- Protected: `.git`, `extensions/supremepower`, root `commands/skills/tests/agents/docs/plans`, top-level docs.
+- Candidate removals: 356 files
+- Estimated reclaim: 1.84 MB
+
+## Removal by top-level
+- `qwen_superpowers`: 202
+- `qwen_integrations`: 96
+- `qwen_skills`: 53
+- `qwen_plans`: 5
+
+## Safety checks
+- Protected path violations: 0
+- Dry-run only: no files deleted.
+
+## Preview remove list (first 150)
+- `qwen_integrations/supremepower/commands/brainstorm.md`
+- `qwen_integrations/supremepower/commands/brainstorm.toml`
+- `qwen_integrations/supremepower/commands/debug.toml`
+- `qwen_integrations/supremepower/commands/execute-plan.md`
+- `qwen_integrations/supremepower/commands/implement.toml`
+- `qwen_integrations/supremepower/commands/plan.toml`
+- `qwen_integrations/supremepower/commands/skills/brainstorming.toml`
+- `qwen_integrations/supremepower/commands/skills/dispatching-parallel-agents.toml`
+- `qwen_integrations/supremepower/commands/skills/executing-plans.toml`
+- `qwen_integrations/supremepower/commands/skills/finishing-a-development-branch.toml`
+- `qwen_integrations/supremepower/commands/skills/receiving-code-review.toml`
+- `qwen_integrations/supremepower/commands/skills/requesting-code-review.toml`
+- `qwen_integrations/supremepower/commands/skills/subagent-driven-development.toml`
+- `qwen_integrations/supremepower/commands/skills/systematic-debugging.toml`
+- `qwen_integrations/supremepower/commands/skills/test-driven-development.toml`
+- `qwen_integrations/supremepower/commands/skills/using-git-worktrees.toml`
+- `qwen_integrations/supremepower/commands/skills/using-superpowers.toml`
+- `qwen_integrations/supremepower/commands/skills/verification-before-completion.toml`
+- `qwen_integrations/supremepower/commands/skills/writing-plans.toml`
+- `qwen_integrations/supremepower/commands/skills/writing-skills.toml`
+- `qwen_integrations/supremepower/commands/sp/agents.toml`
+- `qwen_integrations/supremepower/commands/sp/analyze.toml`
+- `qwen_integrations/supremepower/commands/sp/auto-agent-create.toml`
+- `qwen_integrations/supremepower/commands/sp/config.toml`
+- `qwen_integrations/supremepower/commands/sp/status.toml`
+- `qwen_integrations/supremepower/commands/sp/with.toml`
+- `qwen_integrations/supremepower/commands/tdd.toml`
+- `qwen_integrations/supremepower/commands/write-plan.md`
+- `qwen_integrations/supremepower/docs/ARCHITECTURE.md`
+- `qwen_integrations/supremepower/docs/IMPROVEMENTS.md`
+- `qwen_integrations/supremepower/docs/README.codex.md`
+- `qwen_integrations/supremepower/docs/README.opencode.md`
+- `qwen_integrations/supremepower/docs/configuration.md`
+- `qwen_integrations/supremepower/docs/extending.md`
+- `qwen_integrations/supremepower/docs/installation.md`
+- `qwen_integrations/supremepower/docs/phase1-summary.md`
+- `qwen_integrations/supremepower/docs/phase2-summary.md`
+- `qwen_integrations/supremepower/docs/plans/2025-11-22-opencode-support-design.md`
+- `qwen_integrations/supremepower/docs/plans/2025-11-22-opencode-support-implementation.md`
+- `qwen_integrations/supremepower/docs/plans/2025-11-28-skills-improvements-from-user-feedback.md`
+- `qwen_integrations/supremepower/docs/plans/2025-12-29-phase2-gemini-integration-design.md`
+- `qwen_integrations/supremepower/docs/plans/2025-12-29-phase2-implementation.md`
+- `qwen_integrations/supremepower/docs/platforms/claude-code.md`
+- `qwen_integrations/supremepower/docs/platforms/codex.md`
+- `qwen_integrations/supremepower/docs/platforms/gemini-cli.md`
+- `qwen_integrations/supremepower/docs/platforms/opencode.md`
+- `qwen_integrations/supremepower/docs/testing.md`
+- `qwen_integrations/supremepower/docs/troubleshooting.md`
+- `qwen_integrations/supremepower/docs/usage.md`
+- `qwen_integrations/supremepower/docs/windows/polyglot-hooks.md`
+- `qwen_integrations/supremepower/hooks/hooks.json`
+- `qwen_integrations/supremepower/hooks/run-hook.cmd`
+- `qwen_integrations/supremepower/hooks/session-start.sh`
+- `qwen_integrations/supremepower/skills/dispatching-parallel-agents/SKILL.md`
+- `qwen_integrations/supremepower/skills/ecosystem-clarity/SKILL.md`
+- `qwen_integrations/supremepower/skills/finishing-a-development-branch/SKILL.md`
+- `qwen_integrations/supremepower/skills/receiving-code-review/SKILL.md`
+- `qwen_integrations/supremepower/skills/requesting-code-review/SKILL.md`
+- `qwen_integrations/supremepower/skills/requesting-code-review/code-reviewer.md`
+- `qwen_integrations/supremepower/skills/subagent-driven-development/code-quality-reviewer-prompt.md`
+- `qwen_integrations/supremepower/skills/subagent-driven-development/implementer-prompt.md`
+- `qwen_integrations/supremepower/skills/subagent-driven-development/spec-reviewer-prompt.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/CREATION-LOG.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/SKILL.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/condition-based-waiting-example.ts`
+- `qwen_integrations/supremepower/skills/systematic-debugging/condition-based-waiting.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/defense-in-depth.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/find-polluter.sh`
+- `qwen_integrations/supremepower/skills/systematic-debugging/root-cause-tracing.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/test-academic.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/test-pressure-1.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/test-pressure-2.md`
+- `qwen_integrations/supremepower/skills/systematic-debugging/test-pressure-3.md`
+- `qwen_integrations/supremepower/skills/test-driven-development/SKILL.md`
+- `qwen_integrations/supremepower/skills/test-driven-development/testing-anti-patterns.md`
+- `qwen_integrations/supremepower/skills/using-superpowers/references/codex-tools.md`
+- `qwen_integrations/supremepower/skills/using-superpowers/references/copilot-tools.md`
+- `qwen_integrations/supremepower/skills/using-superpowers/references/gemini-tools.md`
+- `qwen_integrations/supremepower/skills/verification-before-completion/SKILL.md`
+- `qwen_integrations/supremepower/skills/writing-skills/anthropic-best-practices.md`
+- `qwen_integrations/supremepower/skills/writing-skills/examples/CLAUDE_MD_TESTING.md`
+- `qwen_integrations/supremepower/skills/writing-skills/graphviz-conventions.dot`
+- `qwen_integrations/supremepower/skills/writing-skills/persuasion-principles.md`
+- `qwen_integrations/supremepower/skills/writing-skills/render-graphs.js`
+- `qwen_integrations/supremepower/skills/writing-skills/testing-skills-with-subagents.md`
+- `qwen_integrations/supremepower/tests/claude-code/README.md`
+- `qwen_integrations/supremepower/tests/claude-code/run-skill-tests.sh`
+- `qwen_integrations/supremepower/tests/claude-code/test-subagent-driven-development.sh`
+- `qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+- `qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+- `qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+- `qwen_integrations/supremepower/tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+- `qwen_integrations/supremepower/tests/skill-triggering/prompts/requesting-code-review.txt`
+- `qwen_integrations/supremepower/tests/skill-triggering/prompts/systematic-debugging.txt`
+- `qwen_integrations/supremepower/tests/skill-triggering/prompts/test-driven-development.txt`
+- `qwen_integrations/supremepower/tests/skill-triggering/prompts/writing-plans.txt`
+- `qwen_plans/self-evolution-plan.comprehensive.auto.html`
+- `qwen_plans/self-evolution-plan.comprehensive.auto.md`
+- `qwen_plans/self-evolution-plan.comprehensive.html`
+- `qwen_plans/self-evolution-plan.comprehensive.md`
+- `qwen_plans/self-evolution-plan.md`
+- `qwen_skills/devtu-fix-tool/SKILL.md`
+- `qwen_skills/devtu-optimize-descriptions/SKILL.md`
+- `qwen_skills/devtu-optimize-skills/SKILL.md`
+- `qwen_skills/setup-tooluniverse/SKILL.md`
+- `qwen_skills/superpowers-brainstorming/SKILL.md`
+- `qwen_skills/superpowers-dispatching-parallel-agents/SKILL.md`
+- `qwen_skills/superpowers-ecosystem-clarity/SKILL.md`
+- `qwen_skills/superpowers-executing-plans/SKILL.md`
+- `qwen_skills/superpowers-finishing-a-development-branch/SKILL.md`
+- `qwen_skills/superpowers-receiving-code-review/SKILL.md`
+- `qwen_skills/superpowers-requesting-code-review/SKILL.md`
+- `qwen_skills/superpowers-requesting-code-review/code-reviewer.md`
+- `qwen_skills/superpowers-subagent-driven-development/SKILL.md`
+- `qwen_skills/superpowers-subagent-driven-development/code-quality-reviewer-prompt.md`
+- `qwen_skills/superpowers-subagent-driven-development/go-fractals/design.md`
+- `qwen_skills/superpowers-subagent-driven-development/go-fractals/plan.md`
+- `qwen_skills/superpowers-subagent-driven-development/go-fractals/scaffold.sh`
+- `qwen_skills/superpowers-subagent-driven-development/implementer-prompt.md`
+- `qwen_skills/superpowers-subagent-driven-development/run-test.sh`
+- `qwen_skills/superpowers-subagent-driven-development/spec-reviewer-prompt.md`
+- `qwen_skills/superpowers-subagent-driven-development/svelte-todo/design.md`
+- `qwen_skills/superpowers-subagent-driven-development/svelte-todo/plan.md`
+- `qwen_skills/superpowers-subagent-driven-development/svelte-todo/scaffold.sh`
+- `qwen_skills/superpowers-systematic-debugging/CREATION-LOG.md`
+- `qwen_skills/superpowers-systematic-debugging/SKILL.md`
+- `qwen_skills/superpowers-systematic-debugging/condition-based-waiting-example.ts`
+- `qwen_skills/superpowers-systematic-debugging/condition-based-waiting.md`
+- `qwen_skills/superpowers-systematic-debugging/defense-in-depth.md`
+- `qwen_skills/superpowers-systematic-debugging/find-polluter.sh`
+- `qwen_skills/superpowers-systematic-debugging/root-cause-tracing.md`
+- `qwen_skills/superpowers-systematic-debugging/test-academic.md`
+- `qwen_skills/superpowers-systematic-debugging/test-pressure-1.md`
+- `qwen_skills/superpowers-systematic-debugging/test-pressure-2.md`
+- `qwen_skills/superpowers-systematic-debugging/test-pressure-3.md`
+- `qwen_skills/superpowers-test-driven-development/SKILL.md`
+- `qwen_skills/superpowers-test-driven-development/testing-anti-patterns.md`
+- `qwen_skills/superpowers-using-git-worktrees/SKILL.md`
+- `qwen_skills/superpowers-using-superpowers/references/codex-tools.md`
+- `qwen_skills/superpowers-using-superpowers/references/copilot-tools.md`
+- `qwen_skills/superpowers-using-superpowers/references/gemini-tools.md`
+- `qwen_skills/superpowers-verification-before-completion/SKILL.md`
+- `qwen_skills/superpowers-workflow-bootstrap/SKILL.md`
+- `qwen_skills/superpowers-writing-plans/SKILL.md`
+- `qwen_skills/superpowers-writing-skills/SKILL.md`
+- `qwen_skills/superpowers-writing-skills/anthropic-best-practices.md`
+- `qwen_skills/superpowers-writing-skills/examples/CLAUDE_MD_TESTING.md`
+- `qwen_skills/superpowers-writing-skills/graphviz-conventions.dot`
+- `qwen_skills/superpowers-writing-skills/persuasion-principles.md`
+- `qwen_skills/superpowers-writing-skills/render-graphs.js`

@@ -47,4 +47,4 @@ If a task matches a skill description, use that skill. Do not skip mandatory wor
 
 ## Cross-ecosystem
 
-This set is generated from canonical superpowers at `~/iterm2/superpowers/skills/` and propagated for local use. For how Supremepower ties to Cursor, Qwen, and Codex, use the **ecosystem-clarity** skill when available.
+This set is generated from the Cursor-enhanced superpowers at ~/.cursor/skills/superpowers/skills/. For how Supremepower ties to Cursor, Qwen, and Codex, use the **ecosystem-clarity** skill when available.

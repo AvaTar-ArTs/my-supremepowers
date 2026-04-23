@@ -1,0 +1,140 @@
+# Targeted Path Audit
+
+Scanned files: 243
+Same-filename groups: 36
+Exact duplicate-content groups: 49
+
+## Largest exact duplicate groups (by file count)
+- 5 files | sample: `tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+- 5 files | sample: `tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+- 5 files | sample: `tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+- 5 files | sample: `tests/skill-triggering/prompts/test-driven-development.txt`
+- 5 files | sample: `tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+- 5 files | sample: `tests/skill-triggering/prompts/requesting-code-review.txt`
+- 5 files | sample: `tests/skill-triggering/prompts/systematic-debugging.txt`
+- 5 files | sample: `tests/skill-triggering/prompts/writing-plans.txt`
+- 5 files | sample: `qwen_superpowers/commands/execute-plan.md`
+- 5 files | sample: `qwen_superpowers/commands/write-plan.md`
+- 4 files | sample: `tests/explicit-skill-requests/run-test.sh`
+- 4 files | sample: `tests/explicit-skill-requests/run-haiku-test.sh`
+- 4 files | sample: `tests/explicit-skill-requests/run-multiturn-test.sh`
+- 4 files | sample: `tests/explicit-skill-requests/run-claude-describes-sdd.sh`
+- 4 files | sample: `tests/explicit-skill-requests/run-extended-multiturn-test.sh`
+- 4 files | sample: `tests/explicit-skill-requests/run-all.sh`
+- 4 files | sample: `tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt`
+- 4 files | sample: `tests/explicit-skill-requests/prompts/skip-formalities.txt`
+- 4 files | sample: `tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt`
+- 4 files | sample: `tests/explicit-skill-requests/prompts/claude-suggested-it.txt`
+
+## Canonical recommendations (top 25)
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/run-test.sh`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/run-test.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-test.sh`
+  - Duplicate: `tests/explicit-skill-requests/run-test.sh`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/run-haiku-test.sh`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/run-haiku-test.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-haiku-test.sh`
+  - Duplicate: `tests/explicit-skill-requests/run-haiku-test.sh`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/run-multiturn-test.sh`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/run-multiturn-test.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-multiturn-test.sh`
+  - Duplicate: `tests/explicit-skill-requests/run-multiturn-test.sh`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/run-claude-describes-sdd.sh`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/run-claude-describes-sdd.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-claude-describes-sdd.sh`
+  - Duplicate: `tests/explicit-skill-requests/run-claude-describes-sdd.sh`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/run-extended-multiturn-test.sh`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/run-extended-multiturn-test.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-extended-multiturn-test.sh`
+  - Duplicate: `tests/explicit-skill-requests/run-extended-multiturn-test.sh`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/run-all.sh`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/run-all.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-all.sh`
+  - Duplicate: `tests/explicit-skill-requests/run-all.sh`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/skip-formalities.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/skip-formalities.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/skip-formalities.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/skip-formalities.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/use-systematic-debugging.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/please-use-brainstorming.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/claude-suggested-it.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/claude-suggested-it.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/claude-suggested-it.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/claude-suggested-it.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/after-planning-flow.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/after-planning-flow.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/after-planning-flow.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/after-planning-flow.txt`
+- Keep: `extensions/supremepower/tests/explicit-skill-requests/prompts/action-oriented.txt`
+  - Duplicate: `qwen_superpowers/tests/explicit-skill-requests/prompts/action-oriented.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/action-oriented.txt`
+  - Duplicate: `tests/explicit-skill-requests/prompts/action-oriented.txt`
+- Keep: `extensions/supremepower/tests/skill-triggering/run-test.sh`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/run-test.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/run-test.sh`
+  - Duplicate: `tests/skill-triggering/run-test.sh`
+- Keep: `extensions/supremepower/tests/skill-triggering/run-all.sh`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/run-all.sh`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/run-all.sh`
+  - Duplicate: `tests/skill-triggering/run-all.sh`
+- Keep: `extensions/supremepower/tests/skill-triggering/prompts/test-driven-development.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/skill-triggering/prompts/test-driven-development.txt`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/prompts/test-driven-development.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/prompts/test-driven-development.txt`
+  - Duplicate: `tests/skill-triggering/prompts/test-driven-development.txt`
+- Keep: `extensions/supremepower/tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+  - Duplicate: `tests/skill-triggering/prompts/dispatching-parallel-agents.txt`
+- Keep: `extensions/supremepower/tests/skill-triggering/prompts/requesting-code-review.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/skill-triggering/prompts/requesting-code-review.txt`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/prompts/requesting-code-review.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/prompts/requesting-code-review.txt`
+  - Duplicate: `tests/skill-triggering/prompts/requesting-code-review.txt`
+- Keep: `extensions/supremepower/tests/skill-triggering/prompts/systematic-debugging.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/skill-triggering/prompts/systematic-debugging.txt`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/prompts/systematic-debugging.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/prompts/systematic-debugging.txt`
+  - Duplicate: `tests/skill-triggering/prompts/systematic-debugging.txt`
+- Keep: `extensions/supremepower/tests/skill-triggering/prompts/writing-plans.txt`
+  - Duplicate: `qwen_integrations/supremepower/tests/skill-triggering/prompts/writing-plans.txt`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/prompts/writing-plans.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/prompts/writing-plans.txt`
+  - Duplicate: `tests/skill-triggering/prompts/writing-plans.txt`
+- Keep: `extensions/supremepower/tests/skill-triggering/prompts/executing-plans.txt`
+  - Duplicate: `qwen_superpowers/tests/skill-triggering/prompts/executing-plans.txt`
+  - Duplicate: `qwen_superpowers/4.2.0/tests/skill-triggering/prompts/executing-plans.txt`
+  - Duplicate: `tests/skill-triggering/prompts/executing-plans.txt`
+- Keep: `qwen_superpowers/RELEASE-NOTES.md`
+  - Duplicate: `qwen_superpowers/4.2.0/RELEASE-NOTES.md`
+- Keep: `extensions/supremepower/docs/plans/2025-11-22-opencode-support-implementation.md`
+  - Duplicate: `qwen_integrations/supremepower/docs/plans/2025-11-22-opencode-support-implementation.md`
+  - Duplicate: `qwen_superpowers/docs/plans/2025-11-22-opencode-support-implementation.md`
+  - Duplicate: `qwen_superpowers/4.2.0/docs/plans/2025-11-22-opencode-support-implementation.md`
+
+## Notes
+- `qwen_debug/*.txt` files are usually unique logs, not safe to dedupe by name.
+- Many `tests/prompts/*.txt` files are intentional mirrors across distributions.
+- Use canonical selection only where exact hash matches were detected.

@@ -1,0 +1,203 @@
+{
+  "created_skill_dirs": [
+    {
+      "from": "qwen_skills/agent-development",
+      "to": "skills/agent-development",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/automation-recommender",
+      "to": "skills/automation-recommender",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/build-mcp-app",
+      "to": "skills/build-mcp-app",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/build-mcp-server",
+      "to": "skills/build-mcp-server",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/build-mcpb",
+      "to": "skills/build-mcpb",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/claude-md-improver",
+      "to": "skills/claude-md-improver",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/command-development",
+      "to": "skills/command-development",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/cursor-integration",
+      "to": "skills/cursor-integration",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/discord-access",
+      "to": "skills/discord-access",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/discord-configure",
+      "to": "skills/discord-configure",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/ecosystem-navigation",
+      "to": "skills/ecosystem-navigation",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/frontend-design",
+      "to": "skills/frontend-design",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/git-ai-assistant",
+      "to": "skills/git-ai-assistant",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/git-ai-cursor-integration",
+      "to": "skills/git-ai-cursor-integration",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/hook-development",
+      "to": "skills/hook-development",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/ice-tracker-integration",
+      "to": "skills/ice-tracker-integration",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/imessage-access",
+      "to": "skills/imessage-access",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/imessage-configure",
+      "to": "skills/imessage-configure",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/managing-ecosystem-cleanup",
+      "to": "skills/managing-ecosystem-cleanup",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/math-olympiad",
+      "to": "skills/math-olympiad",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/narrative-blueprints",
+      "to": "skills/narrative-blueprints",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/playground",
+      "to": "skills/playground",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/plugin-structure",
+      "to": "skills/plugin-structure",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/self-assistance",
+      "to": "skills/self-assistance",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/self-improvement",
+      "to": "skills/self-improvement",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/session-report",
+      "to": "skills/session-report",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/skill-creator",
+      "to": "skills/skill-creator",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/skill-development",
+      "to": "skills/skill-development",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/sora",
+      "to": "skills/sora",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/telegram-access",
+      "to": "skills/telegram-access",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/telegram-configure",
+      "to": "skills/telegram-configure",
+      "mode": "new-skill-dir"
+    },
+    {
+      "from": "qwen_skills/writing-rules",
+      "to": "skills/writing-rules",
+      "mode": "new-skill-dir"
+    }
+  ],
+  "copied_missing_files": [],
+  "conflicts_kept_with_sidecar": [
+    {
+      "path": "skills/mcp-integration/SKILL.md",
+      "qwen_source": "qwen_skills/mcp-integration/SKILL.md",
+      "imported_as": "skills/mcp-integration/SKILL.md.qwen-import"
+    },
+    {
+      "path": "skills/plugin-settings/SKILL.md",
+      "qwen_source": "qwen_skills/plugin-settings/SKILL.md",
+      "imported_as": "skills/plugin-settings/SKILL.md.qwen-import"
+    },
+    {
+      "path": "skills/using-superpowers/SKILL.md",
+      "qwen_source": "qwen_skills/superpowers-using-superpowers/SKILL.md",
+      "imported_as": "skills/using-superpowers/SKILL.md.qwen-import"
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "qwen_source": "qwen_skills/systematic-debugging/SKILL.md",
+      "imported_as": "skills/systematic-debugging/SKILL.md.qwen-import"
+    },
+    {
+      "path": "skills/workspace-ecosystem-audit/SKILL.md",
+      "qwen_source": "qwen_skills/workspace-ecosystem-audit/SKILL.md",
+      "imported_as": "skills/workspace-ecosystem-audit/SKILL.md.qwen-import"
+    }
+  ],
+  "skipped_ds_store": [
+    "qwen_skills/superpowers-subagent-driven-development/.DS_Store",
+    "qwen_skills/superpowers-using-superpowers/.DS_Store",
+    "qwen_skills/superpowers-writing-skills/.DS_Store"
+  ],
+  "counts": {
+    "created_skill_dirs": 32,
+    "copied_missing_files": 0,
+    "conflicts": 5,
+    "skipped_ds_store": 3
+  }
+}

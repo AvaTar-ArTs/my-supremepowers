@@ -1,0 +1,261 @@
+{
+  "sources": [
+    "qwen_integrations/supremepower",
+    "qwen_security-guidance",
+    "qwen_skills",
+    "qwen_superpowers"
+  ],
+  "targets": [
+    "agents",
+    "commands",
+    "core",
+    "docs",
+    "extensions",
+    "hookify",
+    "hooks",
+    "lib",
+    "logs",
+    "new-hooks-system",
+    "plans",
+    "plugins",
+    "policies",
+    "products",
+    "projects",
+    "reports",
+    "rules",
+    "scripts",
+    "skills",
+    "tests"
+  ],
+  "target_files_scanned": 779,
+  "results": [
+    {
+      "source": "qwen_integrations/supremepower",
+      "exists": true,
+      "files": 45,
+      "size_mb": 0.19,
+      "matches_in_targets": 0,
+      "unique_vs_targets": 45,
+      "match_pct": 0.0,
+      "top_target_overlap": [],
+      "top_ext": [
+        [
+          ".md",
+          14
+        ],
+        [
+          ".sh",
+          11
+        ],
+        [
+          "<none>",
+          8
+        ],
+        [
+          ".txt",
+          7
+        ],
+        [
+          ".toml",
+          3
+        ],
+        [
+          ".py",
+          1
+        ],
+        [
+          ".pyc",
+          1
+        ]
+      ],
+      "matched_examples": [],
+      "unique_examples": [
+        "qwen_integrations/supremepower/superpowers-registry.md",
+        "qwen_integrations/supremepower/qwen-skill-triggers.md",
+        "qwen_integrations/supremepower/session-start-context.md",
+        "qwen_integrations/supremepower/.DS_Store",
+        "qwen_integrations/supremepower/qwen-bootstrap.md",
+        "qwen_integrations/supremepower/qwen-tool-mapping.md",
+        "qwen_integrations/supremepower/tests/.DS_Store",
+        "qwen_integrations/supremepower/tests/claude-code/test-document-review-system.sh",
+        "qwen_integrations/supremepower/tests/claude-code/analyze-token-usage.py",
+        "qwen_integrations/supremepower/tests/claude-code/test-helpers.sh",
+        "qwen_integrations/supremepower/tests/claude-code/test-subagent-driven-development-integration.sh",
+        "qwen_integrations/supremepower/tests/claude-code/__pycache__/analyze-token-usage.cpython-314.pyc"
+      ]
+    },
+    {
+      "source": "qwen_security-guidance",
+      "exists": true,
+      "files": 5,
+      "size_mb": 0.03,
+      "matches_in_targets": 0,
+      "unique_vs_targets": 5,
+      "match_pct": 0.0,
+      "top_target_overlap": [],
+      "top_ext": [
+        [
+          "<none>",
+          2
+        ],
+        [
+          ".py",
+          1
+        ],
+        [
+          ".json",
+          1
+        ],
+        [
+          ".pyc",
+          1
+        ]
+      ],
+      "matched_examples": [],
+      "unique_examples": [
+        "qwen_security-guidance/.DS_Store",
+        "qwen_security-guidance/1.0.0/.DS_Store",
+        "qwen_security-guidance/1.0.0/hooks/security_reminder_hook.py",
+        "qwen_security-guidance/1.0.0/hooks/hooks.json",
+        "qwen_security-guidance/1.0.0/hooks/__pycache__/security_reminder_hook.cpython-314.pyc"
+      ]
+    },
+    {
+      "source": "qwen_skills",
+      "exists": true,
+      "files": 64,
+      "size_mb": 0.55,
+      "matches_in_targets": 55,
+      "unique_vs_targets": 9,
+      "match_pct": 85.94,
+      "top_target_overlap": [
+        [
+          "skills",
+          55
+        ]
+      ],
+      "top_ext": [
+        [
+          ".md",
+          60
+        ],
+        [
+          "<none>",
+          4
+        ]
+      ],
+      "matched_examples": [
+        {
+          "source_file": "qwen_skills/command-development/SKILL.md",
+          "target_match": "skills/command-development/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/superpowers-test-driven-development/SKILL.md",
+          "target_match": "skills/test-driven-development/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/narrative-blueprints/SKILL.md",
+          "target_match": "skills/narrative-blueprints/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/superpowers-writing-skills/SKILL.md",
+          "target_match": "skills/writing-skills/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/telegram-access/SKILL.md",
+          "target_match": "skills/telegram-access/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/build-mcp-server/SKILL.md",
+          "target_match": "skills/build-mcp-server/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/superpowers-verification-before-completion/SKILL.md",
+          "target_match": "skills/verification-before-completion/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/skill-development/SKILL.md",
+          "target_match": "skills/skill-development/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/tooluniverse/SKILL.md",
+          "target_match": "skills/tooluniverse/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/discord-access/SKILL.md",
+          "target_match": "skills/discord-access/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/cursor-integration/SKILL.md",
+          "target_match": "skills/cursor-integration/SKILL.md"
+        },
+        {
+          "source_file": "qwen_skills/writing-rules/SKILL.md",
+          "target_match": "skills/writing-rules/SKILL.md"
+        }
+      ],
+      "unique_examples": [
+        "qwen_skills/.DS_Store",
+        "qwen_skills/superpowers-writing-skills/.DS_Store",
+        "qwen_skills/superpowers-using-superpowers/.DS_Store",
+        "qwen_skills/superpowers-using-superpowers/SKILL.md",
+        "qwen_skills/systematic-debugging/SKILL.md",
+        "qwen_skills/workspace-ecosystem-audit/SKILL.md",
+        "qwen_skills/plugin-settings/SKILL.md",
+        "qwen_skills/superpowers-subagent-driven-development/.DS_Store",
+        "qwen_skills/mcp-integration/SKILL.md"
+      ]
+    },
+    {
+      "source": "qwen_superpowers",
+      "exists": true,
+      "files": 34,
+      "size_mb": 0.2,
+      "matches_in_targets": 0,
+      "unique_vs_targets": 34,
+      "match_pct": 0.0,
+      "top_target_overlap": [],
+      "top_ext": [
+        [
+          ".md",
+          15
+        ],
+        [
+          "<none>",
+          13
+        ],
+        [
+          ".pyc",
+          2
+        ],
+        [
+          ".json",
+          2
+        ],
+        [
+          ".js",
+          1
+        ],
+        [
+          ".sh",
+          1
+        ]
+      ],
+      "matched_examples": [],
+      "unique_examples": [
+        "qwen_superpowers/.DS_Store",
+        "qwen_superpowers/.gitignore",
+        "qwen_superpowers/.gitattributes",
+        "qwen_superpowers/bin/superpowers-codex",
+        "qwen_superpowers/.opencode/INSTALL.md",
+        "qwen_superpowers/.opencode/plugins/superpowers.js",
+        "qwen_superpowers/tests/.DS_Store",
+        "qwen_superpowers/tests/claude-code/__pycache__/analyze-token-usage.cpython-314.pyc",
+        "qwen_superpowers/docs/superpowers-bootstrap.md",
+        "qwen_superpowers/docs/.DS_Store",
+        "qwen_superpowers/docs/INSTALL.md",
+        "qwen_superpowers/docs/README-codex-bundle.md"
+      ]
+    }
+  ]
+}

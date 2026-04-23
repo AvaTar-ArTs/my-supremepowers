@@ -121,3 +121,31 @@ The skill itself tells you which.
 ## User Instructions
 
 Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
+
+## Pressure-Tested Failure Patterns (RED Baseline)
+
+Observed failure patterns when this skill was not actively enforced:
+
+- urgency framing ("just do it now") causing skipped skill invocation,
+- continuity framing ("we already used skills") causing skipped re-check,
+- output-first framing ("no planning loops") causing tool/actions before skill check.
+
+Required response to all three:
+
+1. Do skill applicability check first.
+2. Invoke applicable skill before action.
+3. Then execute quickly with concise output.
+
+No exceptions for pressure language.
+
+
+## Fast-Path Response Template (Pressure Safe)
+
+When user requests speed, concise output, or no loops:
+
+1. state you are proceeding immediately,
+2. run skill applicability check first,
+3. invoke applicable skill before commands/edits,
+4. continue in execution-first mode.
+
+Speed mode changes verbosity, not discipline.

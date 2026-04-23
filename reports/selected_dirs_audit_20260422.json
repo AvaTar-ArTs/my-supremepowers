@@ -1,0 +1,394 @@
+[
+  {
+    "path": "gemini_docs",
+    "exists": true,
+    "files": 10,
+    "dirs": 0,
+    "size_bytes": 70342,
+    "size_mb": 0.07,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        14689,
+        "gemini_docs/AGENT-HOOKS-RALPH-RESEARCH-AND-ASSESSMENT.md"
+      ],
+      [
+        14473,
+        "gemini_docs/PYTHON-PIP-SYSTEM-CHECK.md"
+      ],
+      [
+        9013,
+        "gemini_docs/MCPHOOKER-AUTOTAGGER-FOCUS.md"
+      ],
+      [
+        7843,
+        "gemini_docs/AGENTS-EXTENSIONS-POLICIES-REVIEW.md"
+      ],
+      [
+        6522,
+        "gemini_docs/HOME-ECOSYSTEM-INVENTORY.md"
+      ]
+    ]
+  },
+  {
+    "path": "extensions",
+    "exists": true,
+    "files": 381,
+    "dirs": 134,
+    "size_bytes": 2219651,
+    "size_mb": 2.12,
+    "ds_store_count": 21,
+    "pyc_count": 3,
+    "empty_dir_count": 1,
+    "largest_files": [
+      [
+        568252,
+        "extensions/supremepower.bak.zip"
+      ],
+      [
+        61285,
+        "extensions/supremepower/docs/plans/2025-12-29-phase2-implementation.md"
+      ],
+      [
+        45825,
+        "extensions/supremepower/skills/writing-skills/anthropic-best-practices.md"
+      ],
+      [
+        45825,
+        "extensions/supremepower/core/skills/writing-skills/anthropic-best-practices.md"
+      ],
+      [
+        32959,
+        "extensions/supremepower/docs/phase2-summary.md"
+      ]
+    ]
+  },
+  {
+    "path": "gemini_templates",
+    "exists": true,
+    "files": 0,
+    "dirs": 0,
+    "size_bytes": 0,
+    "size_mb": 0.0,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 1,
+    "largest_files": []
+  },
+  {
+    "path": "qwen_agents",
+    "exists": true,
+    "files": 46,
+    "dirs": 20,
+    "size_bytes": 193927,
+    "size_mb": 0.18,
+    "ds_store_count": 1,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        14340,
+        "qwen_agents/.DS_Store"
+      ],
+      [
+        13871,
+        "qwen_agents/SUBAGENTS_GUIDE.md"
+      ],
+      [
+        11199,
+        "qwen_agents/content-consolidator.md"
+      ],
+      [
+        10910,
+        "qwen_agents/documentation-manager.md"
+      ],
+      [
+        10561,
+        "qwen_agents/revenue-optimizer.md"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_benchmarks",
+    "exists": true,
+    "files": 1,
+    "dirs": 0,
+    "size_bytes": 423,
+    "size_mb": 0.0,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        423,
+        "qwen_benchmarks/README.md"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_code-review",
+    "exists": true,
+    "files": 3,
+    "dirs": 2,
+    "size_bytes": 20891,
+    "size_mb": 0.02,
+    "ds_store_count": 1,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        7422,
+        "qwen_code-review/2cd88e7947b7/commands/code-review.md"
+      ],
+      [
+        7321,
+        "qwen_code-review/2cd88e7947b7/README.md"
+      ],
+      [
+        6148,
+        "qwen_code-review/.DS_Store"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_debug",
+    "exists": true,
+    "files": 43,
+    "dirs": 0,
+    "size_bytes": 18186434,
+    "size_mb": 17.34,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        5907094,
+        "qwen_debug/db98322e-14d5-439e-aa6e-9db3a938c219.txt"
+      ],
+      [
+        4497245,
+        "qwen_debug/902679b5-3272-4112-82de-f733035f445a.txt"
+      ],
+      [
+        3887769,
+        "qwen_debug/db3d7dc1-6da2-4e70-8f0c-e6f567891e8c.txt"
+      ],
+      [
+        787464,
+        "qwen_debug/4b1c8316-d2df-4e67-a146-3606d826acec.txt"
+      ],
+      [
+        642621,
+        "qwen_debug/91b062d9-b6a0-4be5-a86d-4b82cdcbe231.txt"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_docs",
+    "exists": true,
+    "files": 31,
+    "dirs": 3,
+    "size_bytes": 215317,
+    "size_mb": 0.21,
+    "ds_store_count": 2,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        30135,
+        "qwen_docs/EVOLUTION_AND_ITEM_HISTORY.md"
+      ],
+      [
+        18082,
+        "qwen_docs/CHANGELOG.md"
+      ],
+      [
+        15392,
+        "qwen_docs/learned-context.md"
+      ],
+      [
+        12240,
+        "qwen_docs/evolution-changelogs/SYSTEM_SUMMARY.html"
+      ],
+      [
+        9717,
+        "qwen_docs/model-providers-free-and-byok.md"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_evaluations",
+    "exists": true,
+    "files": 0,
+    "dirs": 0,
+    "size_bytes": 0,
+    "size_mb": 0.0,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 1,
+    "largest_files": []
+  },
+  {
+    "path": "qwen_integrations",
+    "exists": true,
+    "files": 46,
+    "dirs": 35,
+    "size_bytes": 200876,
+    "size_mb": 0.19,
+    "ds_store_count": 9,
+    "pyc_count": 1,
+    "empty_dir_count": 14,
+    "largest_files": [
+      [
+        22628,
+        "qwen_integrations/supremepower/skills/writing-skills/SKILL.md"
+      ],
+      [
+        10244,
+        "qwen_integrations/supremepower/skills/.DS_Store"
+      ],
+      [
+        9961,
+        "qwen_integrations/supremepower/skills/subagent-driven-development/SKILL.md"
+      ],
+      [
+        9502,
+        "qwen_integrations/supremepower/tests/claude-code/test-subagent-driven-development-integration.sh"
+      ],
+      [
+        8608,
+        "qwen_integrations/supremepower/tests/claude-code/__pycache__/analyze-token-usage.cpython-314.pyc"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_plans",
+    "exists": true,
+    "files": 0,
+    "dirs": 0,
+    "size_bytes": 0,
+    "size_mb": 0.0,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 1,
+    "largest_files": []
+  },
+  {
+    "path": "qwen_projects",
+    "exists": true,
+    "files": 94,
+    "dirs": 56,
+    "size_bytes": 287275279,
+    "size_mb": 273.97,
+    "ds_store_count": 2,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        44764578,
+        "qwen_projects/-Users-steven/chats/896fcea1-6016-4911-8ba2-d6bc7c6d6b60.jsonl"
+      ],
+      [
+        34005188,
+        "qwen_projects/-Users-steven-iterm2/chats/55987f2e-52fe-409a-9551-a94d3abe0236.jsonl"
+      ],
+      [
+        19285138,
+        "qwen_projects/-Users-steven-Music-nocTurneMeLoDieS/chats/af4d43d8-7c53-4530-8dba-cc5620e0c9b6.jsonl"
+      ],
+      [
+        13498156,
+        "qwen_projects/-Users-steven/chats/ff458e17-0e04-433e-b5ee-12cc4ffb3e46.jsonl"
+      ],
+      [
+        8810784,
+        "qwen_projects/-Users-steven-iterm2/chats/c35952af-198f-470e-a1f7-327126562cd4.jsonl"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_research",
+    "exists": true,
+    "files": 1,
+    "dirs": 0,
+    "size_bytes": 405,
+    "size_mb": 0.0,
+    "ds_store_count": 0,
+    "pyc_count": 0,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        405,
+        "qwen_research/README.md"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_security-guidance",
+    "exists": true,
+    "files": 5,
+    "dirs": 3,
+    "size_bytes": 36167,
+    "size_mb": 0.03,
+    "ds_store_count": 2,
+    "pyc_count": 1,
+    "empty_dir_count": 0,
+    "largest_files": [
+      [
+        12722,
+        "qwen_security-guidance/1.0.0/hooks/__pycache__/security_reminder_hook.cpython-314.pyc"
+      ],
+      [
+        10767,
+        "qwen_security-guidance/1.0.0/hooks/security_reminder_hook.py"
+      ],
+      [
+        6148,
+        "qwen_security-guidance/1.0.0/.DS_Store"
+      ],
+      [
+        6148,
+        "qwen_security-guidance/.DS_Store"
+      ],
+      [
+        382,
+        "qwen_security-guidance/1.0.0/hooks/hooks.json"
+      ]
+    ]
+  },
+  {
+    "path": "qwen_skills",
+    "exists": true,
+    "files": 64,
+    "dirs": 63,
+    "size_bytes": 574012,
+    "size_mb": 0.55,
+    "ds_store_count": 4,
+    "pyc_count": 0,
+    "empty_dir_count": 4,
+    "largest_files": [
+      [
+        43489,
+        "qwen_skills/tooluniverse-clinical-trial-design/SKILL.md"
+      ],
+      [
+        32370,
+        "qwen_skills/skill-creator/SKILL.md"
+      ],
+      [
+        26628,
+        "qwen_skills/.DS_Store"
+      ],
+      [
+        23121,
+        "qwen_skills/tooluniverse/SKILL.md"
+      ],
+      [
+        22825,
+        "qwen_skills/skill-development/SKILL.md"
+      ]
+    ]
+  }
+]

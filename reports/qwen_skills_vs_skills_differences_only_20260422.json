@@ -1,0 +1,544 @@
+{
+  "diff_skills_count": 50,
+  "skills_only_unmapped": [
+    "agent-creation-guidance",
+    "disabled",
+    "math-olympiad-solver",
+    "mcp-app-development-principles",
+    "narrative-documentation",
+    "rule-definition-patterns"
+  ],
+  "results": [
+    {
+      "q_skill": "agent-development",
+      "skills_target": "agent-development",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "automation-recommender",
+      "skills_target": "automation-recommender",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "build-mcp-app",
+      "skills_target": "build-mcp-app",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "build-mcp-server",
+      "skills_target": "build-mcp-server",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "build-mcpb",
+      "skills_target": "build-mcpb",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "claude-md-improver",
+      "skills_target": "claude-md-improver",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "command-development",
+      "skills_target": "command-development",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "cursor-integration",
+      "skills_target": "cursor-integration",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "devtu-fix-tool",
+      "skills_target": "devtu-fix-tool",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "EXAMPLES.md",
+        "QUICK-REFERENCE.md",
+        "UPDATE_SUMMARY.md",
+        "unit-tests-reference.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "devtu-optimize-descriptions",
+      "skills_target": "devtu-optimize-descriptions",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "CHECKLIST.md",
+        "EXAMPLES.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "devtu-optimize-skills",
+      "skills_target": "devtu-optimize-skills",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "CHECKLIST.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "discord-access",
+      "skills_target": "discord-access",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "discord-configure",
+      "skills_target": "discord-configure",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "ecosystem-navigation",
+      "skills_target": "ecosystem-navigation",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "frontend-design",
+      "skills_target": "frontend-design",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "git-ai-assistant",
+      "skills_target": "git-ai-assistant",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "git-ai-cursor-integration",
+      "skills_target": "git-ai-cursor-integration",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "hook-development",
+      "skills_target": "hook-development",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "ice-tracker-integration",
+      "skills_target": "ice-tracker-integration",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "imessage-access",
+      "skills_target": "imessage-access",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "imessage-configure",
+      "skills_target": "imessage-configure",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "managing-ecosystem-cleanup",
+      "skills_target": "managing-ecosystem-cleanup",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "math-olympiad",
+      "skills_target": "math-olympiad",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "mcp-integration",
+      "skills_target": "mcp-integration",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "q_skill": "narrative-blueprints",
+      "skills_target": "narrative-blueprints",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "playground",
+      "skills_target": "playground",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "plugin-settings",
+      "skills_target": "plugin-settings",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "q_skill": "plugin-structure",
+      "skills_target": "plugin-structure",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "self-assistance",
+      "skills_target": "self-assistance",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "self-improvement",
+      "skills_target": "self-improvement",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "session-report",
+      "skills_target": "session-report",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "setup-tooluniverse",
+      "skills_target": "setup-tooluniverse",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "API_KEYS_REFERENCE.md",
+        "EXAMPLES.md",
+        "INSTALL.md",
+        "MCP_CONFIG.md",
+        "SKILL_SUMMARY.md",
+        "scripts/__pycache__/check_prerequisites.cpython-314.pyc",
+        "scripts/__pycache__/diagnose_setup.cpython-314.pyc",
+        "scripts/__pycache__/list_tool_categories.cpython-314.pyc",
+        "scripts/__pycache__/test_mcp_connection.cpython-314.pyc",
+        "scripts/__pycache__/verify_installation.cpython-314.pyc",
+        "scripts/check_prerequisites.py",
+        "scripts/diagnose_setup.py",
+        "scripts/list_tool_categories.py",
+        "scripts/test_mcp_connection.py",
+        "scripts/verify_installation.py"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "skill-creator",
+      "skills_target": "skill-creator",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "skill-development",
+      "skills_target": "skill-development",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "sora",
+      "skills_target": "sora",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "superpowers-brainstorming",
+      "skills_target": "brainstorming",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "versions/SKILL.v1.strict-original.md",
+        "versions/SKILL.v2.simplified-current.md",
+        "versions/SKILL.v3.hybrid-recommended.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "superpowers-requesting-code-review",
+      "skills_target": "requesting-code-review",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "code-reviewer.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "superpowers-subagent-driven-development",
+      "skills_target": "subagent-driven-development",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "code-quality-reviewer-prompt.md",
+        "implementer-prompt.md",
+        "spec-reviewer-prompt.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "superpowers-systematic-debugging",
+      "skills_target": "systematic-debugging",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "CREATION-LOG.md",
+        "condition-based-waiting-example.ts",
+        "condition-based-waiting.md",
+        "defense-in-depth.md",
+        "find-polluter.sh",
+        "root-cause-tracing.md",
+        "test-academic.md",
+        "test-pressure-1.md",
+        "test-pressure-2.md",
+        "test-pressure-3.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "superpowers-test-driven-development",
+      "skills_target": "test-driven-development",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "testing-anti-patterns.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "superpowers-using-superpowers",
+      "skills_target": "using-superpowers",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "references/codex-tools.md",
+        "references/copilot-tools.md",
+        "references/gemini-tools.md"
+      ],
+      "content_diff": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "q_skill": "superpowers-writing-skills",
+      "skills_target": "writing-skills",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "anthropic-best-practices.md",
+        "examples/CLAUDE_MD_TESTING.md",
+        "graphviz-conventions.dot",
+        "persuasion-principles.md",
+        "render-graphs.js",
+        "testing-skills-with-subagents.md",
+        "versions/SKILL.v1.strict-original.md",
+        "versions/SKILL.v2.simplified-current.md",
+        "versions/SKILL.v3.hybrid-recommended.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "systematic-debugging",
+      "skills_target": "systematic-debugging",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "CREATION-LOG.md",
+        "condition-based-waiting-example.ts",
+        "condition-based-waiting.md",
+        "defense-in-depth.md",
+        "find-polluter.sh",
+        "root-cause-tracing.md",
+        "test-academic.md",
+        "test-pressure-1.md",
+        "test-pressure-2.md",
+        "test-pressure-3.md"
+      ],
+      "content_diff": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "q_skill": "telegram-access",
+      "skills_target": "telegram-access",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "telegram-configure",
+      "skills_target": "telegram-configure",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    },
+    {
+      "q_skill": "tooluniverse",
+      "skills_target": "tooluniverse",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "CHECKLIST.md",
+        "REFERENCE.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "tooluniverse-clinical-trial-design",
+      "skills_target": "tooluniverse-clinical-trial-design",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "EXAMPLES.md",
+        "QUICK_START.md",
+        "Trial_Feasibility_osimertinib.md",
+        "UPDATE_SUMMARY.md",
+        "__pycache__/python_implementation.cpython-314.pyc",
+        "__pycache__/trial_pipeline.cpython-314.pyc",
+        "python_implementation.py",
+        "trial_pipeline.py"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "tooluniverse-sequence-retrieval",
+      "skills_target": "tooluniverse-sequence-retrieval",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [
+        "CHECKLIST.md",
+        "examples.md"
+      ],
+      "content_diff": []
+    },
+    {
+      "q_skill": "workspace-ecosystem-audit",
+      "skills_target": "workspace-ecosystem-audit",
+      "target_exists": true,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "q_skill": "writing-rules",
+      "skills_target": "writing-rules",
+      "target_exists": false,
+      "missing_in_skills": [],
+      "missing_in_qwen": [],
+      "content_diff": [],
+      "missing_target_dir": true
+    }
+  ]
+}

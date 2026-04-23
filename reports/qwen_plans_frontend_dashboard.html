@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qwen Plans Frontend Dashboard</title>
+  <style>
+    :root {
+      --bg:#f3efe6;
+      --ink:#1d1b18;
+      --card:#fffaf1;
+      --accent:#d45113;
+      --accent2:#0e6e6e;
+      --muted:#6a6258;
+      --line:#d7cdbb;
+      --shadow:0 12px 28px rgba(40,30,20,.10);
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 8% 10%, #ffe4c9 0%, transparent 42%),
+        radial-gradient(circle at 92% 0%, #cfe8e8 0%, transparent 35%),
+        linear-gradient(180deg,#f8f3ea 0%, #efe6d7 100%);
+      font-family:"Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+    }
+    .wrap { max-width:1100px; margin:24px auto; padding:20px; }
+    .hero {
+      background:linear-gradient(115deg,#1b1a18,#2e251b);
+      color:#fef7ea;
+      border-radius:18px;
+      padding:26px 24px;
+      box-shadow:var(--shadow);
+      transform:translateY(12px);
+      opacity:0;
+      animation:rise .55s ease forwards;
+    }
+    .hero h1 { margin:0 0 8px; letter-spacing:.4px; font-size:clamp(24px,4vw,36px); }
+    .hero p { margin:0; color:#eddcc4; }
+    .grid {
+      margin-top:16px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      gap:14px;
+    }
+    .card {
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px;
+      box-shadow:var(--shadow);
+      opacity:0;
+      transform:translateY(8px);
+      animation:rise .45s ease forwards;
+    }
+    .card:nth-child(1){animation-delay:.08s;}
+    .card:nth-child(2){animation-delay:.12s;}
+    .card:nth-child(3){animation-delay:.16s;}
+    .k { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.12em; margin-bottom:8px; }
+    .v { font-size:30px; font-weight:700; color:var(--accent); }
+
+    .panel {
+      margin-top:16px;
+      display:grid;
+      grid-template-columns:1.25fr .95fr;
+      gap:14px;
+    }
+    @media (max-width:900px){ .panel{grid-template-columns:1fr;} }
+
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th,td { padding:9px 8px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:#5d5347; font-size:11px; text-transform:uppercase; letter-spacing:.1em; }
+
+    .aspect-row { margin:10px 0 12px; }
+    .aspect-label { font-size:13px; display:flex; justify-content:space-between; color:#453b33; margin-bottom:6px; }
+    .bar { height:10px; border-radius:999px; background:#eadfce; overflow:hidden; }
+    .fill { height:100%; background:linear-gradient(90deg,var(--accent),#f09248); border-radius:999px; width:0; transition:width .9s ease; }
+
+    .pill { display:inline-block; padding:4px 8px; border-radius:999px; font-size:11px; background:#ece4d4; color:#584a3a; margin:2px 4px 2px 0; }
+    .footer { margin-top:12px; color:#6a6258; font-size:12px; }
+
+    @keyframes rise { to { transform:translateY(0); opacity:1; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Qwen Plans Analytics</h1>
+      <p>Frontend view of plan inventory, dominant aspects, and generated comprehensive outputs.</p>
+    </section>
+
+    <section class="grid" id="kpis"></section>
+
+    <section class="panel">
+      <div class="card">
+        <div class="k">Plan Inventory</div>
+        <table id="invTable"></table>
+      </div>
+
+      <div class="card">
+        <div class="k">Dominant Aspect Scores</div>
+        <div id="aspectBars"></div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <div class="k">Comprehensive Outputs</div>
+      <div id="outputs"></div>
+      <div class="footer">Generated from CSVs in <code>reports/</code> and plan files in <code>qwen_plans/</code>.</div>
+    </section>
+  </div>
+
+  <script>
+    const inventory = [{"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "word_count": "299", "section_count": "15", "top3_dominant_aspects": "quality_validation;execution_delivery;timeline_phasing", "generated_at": "2026-04-22T20:40:58"}];
+    const aspects = [{"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "objective_strategy", "score": "4"}, {"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "timeline_phasing", "score": "9"}, {"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "execution_delivery", "score": "13"}, {"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "quality_validation", "score": "14"}, {"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "risk_safety", "score": "5"}, {"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "metrics_monitoring", "score": "5"}, {"plan_file": "/Users/steven/my-supremepowers/qwen_plans/self-evolution-plan.md", "plan_name": "self-evolution-plan", "aspect": "governance_iteration", "score": "5"}];
+
+    const totals = {
+      plans: inventory.length,
+      words: inventory.reduce((a,r)=>a + Number(r.word_count||0),0),
+      sections: inventory.reduce((a,r)=>a + Number(r.section_count||0),0),
+      aspectKinds: new Set(aspects.map(a=>a.aspect)).size
+    };
+
+    document.getElementById('kpis').innerHTML = [
+      ['Plans Indexed', totals.plans],
+      ['Total Words', totals.words.toLocaleString()],
+      ['Total Sections', totals.sections.toLocaleString()],
+      ['Aspect Types', totals.aspectKinds]
+    ].map(([k,v]) => `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
+
+    const invTable = document.getElementById('invTable');
+    invTable.innerHTML = `
+      <thead><tr><th>Plan</th><th>Words</th><th>Sections</th><th>Top Aspects</th></tr></thead>
+      <tbody>${inventory.map(r=>`
+        <tr>
+          <td><strong>${r.plan_name}</strong></td>
+          <td>${r.word_count}</td>
+          <td>${r.section_count}</td>
+          <td>${String(r.top3_dominant_aspects||'').split(';').map(x=>x?`<span class="pill">${x}</span>`:'').join('')}</td>
+        </tr>
+      `).join('')}</tbody>
+    `;
+
+    const grouped = aspects.reduce((acc,row)=>{
+      const k=row.aspect; acc[k]=(acc[k]||0)+Number(row.score||0); return acc;
+    }, {});
+    const max = Math.max(1,...Object.values(grouped));
+
+    const bars = document.getElementById('aspectBars');
+    bars.innerHTML = Object.entries(grouped)
+      .sort((a,b)=>b[1]-a[1])
+      .map(([aspect,score],i)=>`
+        <div class="aspect-row" style="animation-delay:${.08 + i*.06}s">
+          <div class="aspect-label"><span>${aspect}</span><strong>${score}</strong></div>
+          <div class="bar"><div class="fill" data-w="${Math.round((score/max)*100)}"></div></div>
+        </div>
+      `).join('');
+
+    const out = document.getElementById('outputs');
+    out.innerHTML = inventory.map(r=>{
+      const base = r.plan_name;
+      const md = `/Users/steven/my-supremepowers/qwen_plans/${base}.comprehensive.auto.md`;
+      const html = `/Users/steven/my-supremepowers/qwen_plans/${base}.comprehensive.auto.html`;
+      return `<div style="margin:8px 0;"><strong>${base}</strong><br/>
+        <code>${md}</code><br/>
+        <code>${html}</code>
+      </div>`;
+    }).join('');
+
+    requestAnimationFrame(()=>{
+      document.querySelectorAll('.fill').forEach(el=>el.style.width = el.dataset.w + '%');
+    });
+  </script>
+</body>
+</html>

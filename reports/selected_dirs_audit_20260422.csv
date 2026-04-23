@@ -1,0 +1,16 @@
+path,exists,files,dirs,size_bytes,size_mb,ds_store_count,pyc_count,empty_dir_count
+gemini_docs,True,10,0,70342,0.07,0,0,0
+extensions,True,381,134,2219651,2.12,21,3,1
+gemini_templates,True,0,0,0,0.0,0,0,1
+qwen_agents,True,46,20,193927,0.18,1,0,0
+qwen_benchmarks,True,1,0,423,0.0,0,0,0
+qwen_code-review,True,3,2,20891,0.02,1,0,0
+qwen_debug,True,43,0,18186434,17.34,0,0,0
+qwen_docs,True,31,3,215317,0.21,2,0,0
+qwen_evaluations,True,0,0,0,0.0,0,0,1
+qwen_integrations,True,46,35,200876,0.19,9,1,14
+qwen_plans,True,0,0,0,0.0,0,0,1
+qwen_projects,True,94,56,287275279,273.97,2,0,0
+qwen_research,True,1,0,405,0.0,0,0,0
+qwen_security-guidance,True,5,3,36167,0.03,2,1,0
+qwen_skills,True,64,63,574012,0.55,4,0,4

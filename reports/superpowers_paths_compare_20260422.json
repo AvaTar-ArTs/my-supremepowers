@@ -1,0 +1,266 @@
+{
+  "superpowers_skill_compare": [
+    {
+      "q_skill": "superpowers-brainstorming",
+      "mapped_skill": "brainstorming",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 4,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [
+        "versions/SKILL.v1.strict-original.md",
+        "versions/SKILL.v2.simplified-current.md",
+        "versions/SKILL.v3.hybrid-recommended.md"
+      ],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-dispatching-parallel-agents",
+      "mapped_skill": "dispatching-parallel-agents",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-ecosystem-clarity",
+      "mapped_skill": "ecosystem-clarity",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-executing-plans",
+      "mapped_skill": "executing-plans",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-finishing-a-development-branch",
+      "mapped_skill": "finishing-a-development-branch",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-receiving-code-review",
+      "mapped_skill": "receiving-code-review",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-requesting-code-review",
+      "mapped_skill": "requesting-code-review",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 2,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [
+        "code-reviewer.md"
+      ],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-subagent-driven-development",
+      "mapped_skill": "subagent-driven-development",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 4,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [
+        "code-quality-reviewer-prompt.md",
+        "implementer-prompt.md",
+        "spec-reviewer-prompt.md"
+      ],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-systematic-debugging",
+      "mapped_skill": "systematic-debugging",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 12,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [
+        "CREATION-LOG.md",
+        "SKILL.md.pre-qwen-merge",
+        "condition-based-waiting-example.ts",
+        "condition-based-waiting.md",
+        "defense-in-depth.md",
+        "find-polluter.sh",
+        "root-cause-tracing.md",
+        "test-academic.md",
+        "test-pressure-1.md",
+        "test-pressure-2.md",
+        "test-pressure-3.md"
+      ],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-test-driven-development",
+      "mapped_skill": "test-driven-development",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 2,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [
+        "testing-anti-patterns.md"
+      ],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-using-git-worktrees",
+      "mapped_skill": "using-git-worktrees",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-using-superpowers",
+      "mapped_skill": "using-superpowers",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 5,
+      "same_hash_files": 0,
+      "q_only": [],
+      "skill_only": [
+        "SKILL.md.pre-qwen-merge",
+        "references/codex-tools.md",
+        "references/copilot-tools.md",
+        "references/gemini-tools.md"
+      ],
+      "diff_same_path": [
+        "SKILL.md"
+      ]
+    },
+    {
+      "q_skill": "superpowers-verification-before-completion",
+      "mapped_skill": "verification-before-completion",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-workflow-bootstrap",
+      "mapped_skill": "workflow-bootstrap",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-writing-plans",
+      "mapped_skill": "writing-plans",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 1,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [],
+      "diff_same_path": []
+    },
+    {
+      "q_skill": "superpowers-writing-skills",
+      "mapped_skill": "writing-skills",
+      "q_exists": true,
+      "skill_exists": true,
+      "q_files": 1,
+      "skill_files": 10,
+      "same_hash_files": 1,
+      "q_only": [],
+      "skill_only": [
+        "anthropic-best-practices.md",
+        "examples/CLAUDE_MD_TESTING.md",
+        "graphviz-conventions.dot",
+        "persuasion-principles.md",
+        "render-graphs.js",
+        "testing-skills-with-subagents.md",
+        "versions/SKILL.v1.strict-original.md",
+        "versions/SKILL.v2.simplified-current.md",
+        "versions/SKILL.v3.hybrid-recommended.md"
+      ],
+      "diff_same_path": []
+    }
+  ],
+  "qwen_superpowers_vs_skills": {
+    "qwen_superpowers_files": 25,
+    "skills_files": 152,
+    "hash_matches": 0,
+    "unique_in_qwen_superpowers": 25,
+    "match_examples": [],
+    "unique_examples": [
+      ".gitignore",
+      ".gitattributes",
+      "bin/superpowers-codex",
+      ".opencode/INSTALL.md",
+      ".opencode/plugins/superpowers.js",
+      "tests/claude-code/__pycache__/analyze-token-usage.cpython-314.pyc",
+      "docs/superpowers-bootstrap.md",
+      "docs/INSTALL.md",
+      "docs/README-codex-bundle.md",
+      ".codex/INSTALL.md",
+      ".claude-plugin/marketplace.json",
+      "templates/AGENTS.md",
+      "4.2.0/RELEASE-NOTES.md",
+      "4.2.0/README.md",
+      "4.2.0/.gitignore",
+      "4.2.0/tests/claude-code/__pycache__/analyze-token-usage.cpython-314.pyc",
+      "4.2.0/docs/README.codex.md",
+      "4.2.0/docs/README.opencode.md",
+      "4.2.0/hooks/session-start.sh",
+      "4.2.0/hooks/hooks.json"
+    ]
+  }
+}

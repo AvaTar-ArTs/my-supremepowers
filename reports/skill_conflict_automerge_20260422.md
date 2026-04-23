@@ -1,0 +1,22 @@
+# Skill Conflict Auto-Merge
+
+- `skills/mcp-integration/SKILL.md`: merged
+  - backup: `skills/mcp-integration/SKILL.md.pre-qwen-merge`
+  - removed sidecar: `skills/mcp-integration/SKILL.md.qwen-import`
+  - added qwen-only sections: 43
+- `skills/plugin-settings/SKILL.md`: merged
+  - backup: `skills/plugin-settings/SKILL.md.pre-qwen-merge`
+  - removed sidecar: `skills/plugin-settings/SKILL.md.qwen-import`
+  - added qwen-only sections: 29
+- `skills/using-superpowers/SKILL.md`: merged
+  - backup: `skills/using-superpowers/SKILL.md.pre-qwen-merge`
+  - removed sidecar: `skills/using-superpowers/SKILL.md.qwen-import`
+  - added qwen-only sections: 2
+- `skills/systematic-debugging/SKILL.md`: merged
+  - backup: `skills/systematic-debugging/SKILL.md.pre-qwen-merge`
+  - removed sidecar: `skills/systematic-debugging/SKILL.md.qwen-import`
+  - added qwen-only sections: 0
+- `skills/workspace-ecosystem-audit/SKILL.md`: merged
+  - backup: `skills/workspace-ecosystem-audit/SKILL.md.pre-qwen-merge`
+  - removed sidecar: `skills/workspace-ecosystem-audit/SKILL.md.qwen-import`
+  - added qwen-only sections: 5

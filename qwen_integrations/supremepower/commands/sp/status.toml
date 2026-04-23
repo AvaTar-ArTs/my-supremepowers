@@ -1,4 +1,0 @@
-description = "Show orchestration debugging information"
-prompt = """
-Let me show the last orchestration details for debugging.
-"""

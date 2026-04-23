@@ -1,0 +1,453 @@
+{
+  "total_files_scanned": 243,
+  "same_filename_groups": 36,
+  "exact_duplicate_content_groups": 49,
+  "largest_exact_duplicate_groups": [
+    {
+      "count": 5,
+      "sample": "tests/explicit-skill-requests/prompts/use-systematic-debugging.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/explicit-skill-requests/prompts/please-use-brainstorming.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/skill-triggering/prompts/test-driven-development.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/skill-triggering/prompts/dispatching-parallel-agents.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/skill-triggering/prompts/requesting-code-review.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/skill-triggering/prompts/systematic-debugging.txt"
+    },
+    {
+      "count": 5,
+      "sample": "tests/skill-triggering/prompts/writing-plans.txt"
+    },
+    {
+      "count": 5,
+      "sample": "qwen_superpowers/commands/execute-plan.md"
+    },
+    {
+      "count": 5,
+      "sample": "qwen_superpowers/commands/write-plan.md"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/run-test.sh"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/run-haiku-test.sh"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/run-multiturn-test.sh"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/run-claude-describes-sdd.sh"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/run-extended-multiturn-test.sh"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/run-all.sh"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/prompts/skip-formalities.txt"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt"
+    },
+    {
+      "count": 4,
+      "sample": "tests/explicit-skill-requests/prompts/claude-suggested-it.txt"
+    }
+  ],
+  "canonical_recommendations": [
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/run-test.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/run-test.sh",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-test.sh",
+        "tests/explicit-skill-requests/run-test.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/run-haiku-test.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/run-haiku-test.sh",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-haiku-test.sh",
+        "tests/explicit-skill-requests/run-haiku-test.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/run-multiturn-test.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/run-multiturn-test.sh",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-multiturn-test.sh",
+        "tests/explicit-skill-requests/run-multiturn-test.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/run-claude-describes-sdd.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/run-claude-describes-sdd.sh",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-claude-describes-sdd.sh",
+        "tests/explicit-skill-requests/run-claude-describes-sdd.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/run-extended-multiturn-test.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/run-extended-multiturn-test.sh",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-extended-multiturn-test.sh",
+        "tests/explicit-skill-requests/run-extended-multiturn-test.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/run-all.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/run-all.sh",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/run-all.sh",
+        "tests/explicit-skill-requests/run-all.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt",
+        "tests/explicit-skill-requests/prompts/i-know-what-sdd-means.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/skip-formalities.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/skip-formalities.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/skip-formalities.txt",
+        "tests/explicit-skill-requests/prompts/skip-formalities.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt",
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/use-systematic-debugging.txt",
+        "tests/explicit-skill-requests/prompts/use-systematic-debugging.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt",
+        "tests/explicit-skill-requests/prompts/mid-conversation-execute-plan.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt",
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt",
+        "tests/explicit-skill-requests/prompts/subagent-driven-development-please.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt",
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/please-use-brainstorming.txt",
+        "tests/explicit-skill-requests/prompts/please-use-brainstorming.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/claude-suggested-it.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/claude-suggested-it.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/claude-suggested-it.txt",
+        "tests/explicit-skill-requests/prompts/claude-suggested-it.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/after-planning-flow.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/after-planning-flow.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/after-planning-flow.txt",
+        "tests/explicit-skill-requests/prompts/after-planning-flow.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/explicit-skill-requests/prompts/action-oriented.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/explicit-skill-requests/prompts/action-oriented.txt",
+        "qwen_superpowers/4.2.0/tests/explicit-skill-requests/prompts/action-oriented.txt",
+        "tests/explicit-skill-requests/prompts/action-oriented.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/run-test.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/skill-triggering/run-test.sh",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/run-test.sh",
+        "tests/skill-triggering/run-test.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/run-all.sh",
+      "duplicates": [
+        "qwen_superpowers/tests/skill-triggering/run-all.sh",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/run-all.sh",
+        "tests/skill-triggering/run-all.sh"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/prompts/test-driven-development.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/skill-triggering/prompts/test-driven-development.txt",
+        "qwen_superpowers/tests/skill-triggering/prompts/test-driven-development.txt",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/prompts/test-driven-development.txt",
+        "tests/skill-triggering/prompts/test-driven-development.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/prompts/dispatching-parallel-agents.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/skill-triggering/prompts/dispatching-parallel-agents.txt",
+        "qwen_superpowers/tests/skill-triggering/prompts/dispatching-parallel-agents.txt",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/prompts/dispatching-parallel-agents.txt",
+        "tests/skill-triggering/prompts/dispatching-parallel-agents.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/prompts/requesting-code-review.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/skill-triggering/prompts/requesting-code-review.txt",
+        "qwen_superpowers/tests/skill-triggering/prompts/requesting-code-review.txt",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/prompts/requesting-code-review.txt",
+        "tests/skill-triggering/prompts/requesting-code-review.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/prompts/systematic-debugging.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/skill-triggering/prompts/systematic-debugging.txt",
+        "qwen_superpowers/tests/skill-triggering/prompts/systematic-debugging.txt",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/prompts/systematic-debugging.txt",
+        "tests/skill-triggering/prompts/systematic-debugging.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/prompts/writing-plans.txt",
+      "duplicates": [
+        "qwen_integrations/supremepower/tests/skill-triggering/prompts/writing-plans.txt",
+        "qwen_superpowers/tests/skill-triggering/prompts/writing-plans.txt",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/prompts/writing-plans.txt",
+        "tests/skill-triggering/prompts/writing-plans.txt"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/tests/skill-triggering/prompts/executing-plans.txt",
+      "duplicates": [
+        "qwen_superpowers/tests/skill-triggering/prompts/executing-plans.txt",
+        "qwen_superpowers/4.2.0/tests/skill-triggering/prompts/executing-plans.txt",
+        "tests/skill-triggering/prompts/executing-plans.txt"
+      ]
+    },
+    {
+      "canonical": "qwen_superpowers/RELEASE-NOTES.md",
+      "duplicates": [
+        "qwen_superpowers/4.2.0/RELEASE-NOTES.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/plans/2025-11-22-opencode-support-implementation.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/plans/2025-11-22-opencode-support-implementation.md",
+        "qwen_superpowers/docs/plans/2025-11-22-opencode-support-implementation.md",
+        "qwen_superpowers/4.2.0/docs/plans/2025-11-22-opencode-support-implementation.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/plans/2025-11-22-opencode-support-design.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/plans/2025-11-22-opencode-support-design.md",
+        "qwen_superpowers/docs/plans/2025-11-22-opencode-support-design.md",
+        "qwen_superpowers/4.2.0/docs/plans/2025-11-22-opencode-support-design.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/plans/2025-11-28-skills-improvements-from-user-feedback.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/plans/2025-11-28-skills-improvements-from-user-feedback.md",
+        "qwen_superpowers/docs/plans/2025-11-28-skills-improvements-from-user-feedback.md",
+        "qwen_superpowers/4.2.0/docs/plans/2025-11-28-skills-improvements-from-user-feedback.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/commands/execute-plan.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/commands/execute-plan.md",
+        "qwen_superpowers/commands/execute-plan.md",
+        "qwen_superpowers/4.2.0/commands/execute-plan.md",
+        "commands/execute-plan.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/commands/write-plan.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/commands/write-plan.md",
+        "qwen_superpowers/commands/write-plan.md",
+        "qwen_superpowers/4.2.0/commands/write-plan.md",
+        "commands/write-plan.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/using-git-worktrees/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/using-git-worktrees/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/executing-plans/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/executing-plans/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/brainstorming/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/brainstorming/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/writing-plans/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/writing-plans/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/requesting-code-review/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/requesting-code-review/SKILL.md",
+        "skills/requesting-code-review/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/writing-skills/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/writing-skills/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "qwen_integrations/supremepower/skills/subagent-driven-development/SKILL.md",
+      "duplicates": [
+        "qwen_superpowers/skills/subagent-driven-development/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/brainstorming/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/brainstorming/SKILL.md",
+        "qwen_superpowers/4.2.0/skills/brainstorming/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/writing-plans/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/writing-plans/SKILL.md",
+        "qwen_superpowers/4.2.0/skills/writing-plans/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/requesting-code-review/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/requesting-code-review/SKILL.md",
+        "qwen_superpowers/4.2.0/skills/requesting-code-review/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/using-git-worktrees/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/using-git-worktrees/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/executing-plans/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/executing-plans/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/writing-skills/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/writing-skills/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/core/skills/subagent-driven-development/SKILL.md",
+      "duplicates": [
+        "extensions/supremepower/skills/subagent-driven-development/SKILL.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/platforms/claude-code.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/platforms/claude-code.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/platforms/codex.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/platforms/codex.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/platforms/gemini-cli.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/platforms/gemini-cli.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/platforms/opencode.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/platforms/opencode.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/plans/2025-12-29-phase2-gemini-integration-design.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/plans/2025-12-29-phase2-gemini-integration-design.md"
+      ]
+    },
+    {
+      "canonical": "extensions/supremepower/docs/plans/2025-12-29-phase2-implementation.md",
+      "duplicates": [
+        "qwen_integrations/supremepower/docs/plans/2025-12-29-phase2-implementation.md"
+      ]
+    }
+  ]
+}

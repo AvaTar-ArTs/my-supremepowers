@@ -1,58 +1,35 @@
 ---
 name: brainstorming
-description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+description: Use when starting any feature, component, or behavior change that needs requirement clarity and design validation before implementation.
 ---
-
-> **Supremepower:** Generated from Cursor-enhanced superpowers. Same methodology; load skills via the extension (e.g. /skills:name or extension UI).
-
-
 
 # Brainstorming Ideas Into Designs
 
 ## Overview
+This skill turns ideas into approved designs before implementation starts.
 
-Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+<HARD-GATE>
+Do NOT implement, scaffold, or invoke implementation skills until a design is presented and explicitly approved.
+</HARD-GATE>
 
-Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design in small sections (200-300 words), checking after each section whether it looks right so far.
+## Required Sequence
+1. Explore context (code/docs/recent changes).
+2. Ask clarifying questions one at a time.
+3. Propose 2-3 approaches with trade-offs and a recommendation.
+4. Present design sections and confirm approval.
+5. Write design doc to `docs/plans/YYYY-MM-DD-<topic>-design.md`.
+6. Hand off to planning skill for implementation plan.
 
-## The Process
+## Process Rules
+- One question per message.
+- Prefer multiple-choice when practical.
+- Include constraints, success criteria, and non-goals.
+- Keep designs concise for simple work; deeper for complex work.
+- Cover architecture, components, data flow, error handling, and tests.
+- Revisit assumptions when user feedback indicates mismatch.
 
-**Understanding the idea:**
-- Check out the current project state first (files, docs, recent commits)
-- Ask questions one at a time to refine the idea
-- Prefer multiple choice questions when possible, but open-ended is fine too
-- Only one question per message - if a topic needs more exploration, break it into multiple questions
-- Focus on understanding: purpose, constraints, success criteria
+## Anti-Pattern
+"Too simple for design" is not valid. Simple tasks still need a brief explicit design and approval.
 
-**Exploring approaches:**
-- Propose 2-3 different approaches with trade-offs
-- Present options conversationally with your recommendation and reasoning
-- Lead with your recommended option and explain why
-
-**Presenting the design:**
-- Once you believe you understand what you're building, present the design
-- Break it into sections of 200-300 words
-- Ask after each section whether it looks right so far
-- Cover: architecture, components, data flow, error handling, testing
-- Be ready to go back and clarify if something doesn't make sense
-
-## After the Design
-
-**Documentation:**
-- Write the validated design to `docs/plans/YYYY-MM-DD-<topic>-design.md`
-- Use elements-of-style:writing-clearly-and-concisely skill if available
-- Commit the design document to git
-
-**Implementation (if continuing):**
-- Ask: "Ready to set up for implementation?"
-- Use superpowers:using-git-worktrees to create isolated workspace
-- Use superpowers:writing-plans to create detailed implementation plan
-
-## Key Principles
-
-- **One question at a time** - Don't overwhelm with multiple questions
-- **Multiple choice preferred** - Easier to answer than open-ended when possible
-- **YAGNI ruthlessly** - Remove unnecessary features from all designs
-- **Explore alternatives** - Always propose 2-3 approaches before settling
-- **Incremental validation** - Present design in sections, validate each
-- **Be flexible** - Go back and clarify when something doesn't make sense
+## Transition
+After approval, proceed to a planning skill. Do not skip the planning step.

@@ -1,0 +1,17 @@
+q_skill,mapped_skill,q_exists,skill_exists,q_files,skill_files,same_hash_files,q_only_count,skill_only_count,diff_same_path_count
+superpowers-brainstorming,brainstorming,True,True,1,4,1,0,3,0
+superpowers-dispatching-parallel-agents,dispatching-parallel-agents,True,True,1,1,1,0,0,0
+superpowers-ecosystem-clarity,ecosystem-clarity,True,True,1,1,1,0,0,0
+superpowers-executing-plans,executing-plans,True,True,1,1,1,0,0,0
+superpowers-finishing-a-development-branch,finishing-a-development-branch,True,True,1,1,1,0,0,0
+superpowers-receiving-code-review,receiving-code-review,True,True,1,1,1,0,0,0
+superpowers-requesting-code-review,requesting-code-review,True,True,1,2,1,0,1,0
+superpowers-subagent-driven-development,subagent-driven-development,True,True,1,4,1,0,3,0
+superpowers-systematic-debugging,systematic-debugging,True,True,1,12,1,0,11,0
+superpowers-test-driven-development,test-driven-development,True,True,1,2,1,0,1,0
+superpowers-using-git-worktrees,using-git-worktrees,True,True,1,1,1,0,0,0
+superpowers-using-superpowers,using-superpowers,True,True,1,5,0,0,4,1
+superpowers-verification-before-completion,verification-before-completion,True,True,1,1,1,0,0,0
+superpowers-workflow-bootstrap,workflow-bootstrap,True,True,1,1,1,0,0,0
+superpowers-writing-plans,writing-plans,True,True,1,1,1,0,0,0
+superpowers-writing-skills,writing-skills,True,True,1,10,1,0,9,0

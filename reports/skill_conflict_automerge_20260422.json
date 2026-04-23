@@ -1,0 +1,37 @@
+[
+  {
+    "file": "skills/mcp-integration/SKILL.md",
+    "backup": "skills/mcp-integration/SKILL.md.pre-qwen-merge",
+    "removed_sidecar": "skills/mcp-integration/SKILL.md.qwen-import",
+    "added_new_sections_from_qwen": 43,
+    "status": "merged"
+  },
+  {
+    "file": "skills/plugin-settings/SKILL.md",
+    "backup": "skills/plugin-settings/SKILL.md.pre-qwen-merge",
+    "removed_sidecar": "skills/plugin-settings/SKILL.md.qwen-import",
+    "added_new_sections_from_qwen": 29,
+    "status": "merged"
+  },
+  {
+    "file": "skills/using-superpowers/SKILL.md",
+    "backup": "skills/using-superpowers/SKILL.md.pre-qwen-merge",
+    "removed_sidecar": "skills/using-superpowers/SKILL.md.qwen-import",
+    "added_new_sections_from_qwen": 2,
+    "status": "merged"
+  },
+  {
+    "file": "skills/systematic-debugging/SKILL.md",
+    "backup": "skills/systematic-debugging/SKILL.md.pre-qwen-merge",
+    "removed_sidecar": "skills/systematic-debugging/SKILL.md.qwen-import",
+    "added_new_sections_from_qwen": 0,
+    "status": "merged"
+  },
+  {
+    "file": "skills/workspace-ecosystem-audit/SKILL.md",
+    "backup": "skills/workspace-ecosystem-audit/SKILL.md.pre-qwen-merge",
+    "removed_sidecar": "skills/workspace-ecosystem-audit/SKILL.md.qwen-import",
+    "added_new_sections_from_qwen": 5,
+    "status": "merged"
+  }
+]

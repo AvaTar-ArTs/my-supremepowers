@@ -1,0 +1,266 @@
+[
+  {
+    "dir": "qwen_projects",
+    "exists": true,
+    "files": 94,
+    "bytes": 287275279,
+    "mb": 273.97,
+    "top_exts": [
+      [
+        ".jsonl",
+        92
+      ],
+      [
+        "<none>",
+        2
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_debug",
+    "exists": true,
+    "files": 43,
+    "bytes": 18186434,
+    "mb": 17.34,
+    "top_exts": [
+      [
+        ".txt",
+        42
+      ],
+      [
+        "<none>",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_skills",
+    "exists": true,
+    "files": 42,
+    "bytes": 358724,
+    "mb": 0.34,
+    "top_exts": [
+      [
+        ".md",
+        38
+      ],
+      [
+        "<none>",
+        4
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_docs",
+    "exists": true,
+    "files": 31,
+    "bytes": 215317,
+    "mb": 0.21,
+    "top_exts": [
+      [
+        ".md",
+        28
+      ],
+      [
+        "<none>",
+        2
+      ],
+      [
+        ".html",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_superpowers",
+    "exists": true,
+    "files": 34,
+    "bytes": 209405,
+    "mb": 0.2,
+    "top_exts": [
+      [
+        ".md",
+        15
+      ],
+      [
+        "<none>",
+        13
+      ],
+      [
+        ".pyc",
+        2
+      ],
+      [
+        ".json",
+        2
+      ],
+      [
+        ".js",
+        1
+      ],
+      [
+        ".sh",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_integrations",
+    "exists": true,
+    "files": 46,
+    "bytes": 200876,
+    "mb": 0.19,
+    "top_exts": [
+      [
+        ".md",
+        14
+      ],
+      [
+        ".sh",
+        11
+      ],
+      [
+        "<none>",
+        9
+      ],
+      [
+        ".txt",
+        7
+      ],
+      [
+        ".toml",
+        3
+      ],
+      [
+        ".py",
+        1
+      ],
+      [
+        ".pyc",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_agents",
+    "exists": true,
+    "files": 46,
+    "bytes": 193927,
+    "mb": 0.18,
+    "top_exts": [
+      [
+        ".md",
+        44
+      ],
+      [
+        "<none>",
+        1
+      ],
+      [
+        ".sh",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_security-guidance",
+    "exists": true,
+    "files": 5,
+    "bytes": 36167,
+    "mb": 0.03,
+    "top_exts": [
+      [
+        "<none>",
+        2
+      ],
+      [
+        ".py",
+        1
+      ],
+      [
+        ".json",
+        1
+      ],
+      [
+        ".pyc",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_code-review",
+    "exists": true,
+    "files": 3,
+    "bytes": 20891,
+    "mb": 0.02,
+    "top_exts": [
+      [
+        ".md",
+        2
+      ],
+      [
+        "<none>",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_templates",
+    "exists": true,
+    "files": 5,
+    "bytes": 9642,
+    "mb": 0.01,
+    "top_exts": [
+      [
+        ".md",
+        4
+      ],
+      [
+        "<none>",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_benchmarks",
+    "exists": true,
+    "files": 1,
+    "bytes": 423,
+    "mb": 0.0,
+    "top_exts": [
+      [
+        ".md",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_research",
+    "exists": true,
+    "files": 1,
+    "bytes": 405,
+    "mb": 0.0,
+    "top_exts": [
+      [
+        ".md",
+        1
+      ]
+    ]
+  },
+  {
+    "dir": "qwen_evaluations",
+    "exists": true,
+    "files": 0,
+    "bytes": 0,
+    "mb": 0.0,
+    "top_exts": []
+  },
+  {
+    "dir": "qwen_plans",
+    "exists": true,
+    "files": 0,
+    "bytes": 0,
+    "mb": 0.0,
+    "top_exts": []
+  }
+]

@@ -1,0 +1,5 @@
+source,exists,files,size_mb,matches_in_targets,unique_vs_targets,match_pct
+qwen_integrations/supremepower,True,45,0.19,0,45,0.0
+qwen_security-guidance,True,5,0.03,0,5,0.0
+qwen_skills,True,64,0.55,55,9,85.94
+qwen_superpowers,True,34,0.2,0,34,0.0

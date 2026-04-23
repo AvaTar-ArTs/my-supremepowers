@@ -1,3 +1,8 @@
+---
+name: ARCH_COMPARISON
+description: Compares the intended state of the SupremePower framework consolidation against its current state, detailing file organization, operations, and evolutionary path. This document has been updated to include the generalization of skills and agents.
+---
+
 # Architecture Comparison: SupremePower Framework Consolidation
 
 This document compares the intended state of the SupremePower framework consolidation against its current state in `/Users/steven/my-supremepowers/`, referencing the logs from `go-forward.txt` and `my-powerstxt.txt`.
@@ -129,7 +134,7 @@ The current state of `/Users/steven/my-supremepowers/` generally aligns with the
 *   **Missing Source Files:** The logs repeatedly mention missing source files, particularly from `~/.qwen/` (e.g., `benchmarks/`, `research/`) and some components within `~/.gemini/`. While placeholder creation was confirmed, the actual source code for these items is not present in the consolidated directory.
 *   **File vs. Directory:** Some items logged as "missing" might have resulted in placeholder directories or files being created, as per the user's request. The exact nature of these placeholders would require inspecting their content.
 *   **Auxiliary Files:** Files like `.DS_Store`, `create.txt`, `docs-04-22-17.csv` are present but were not explicitly part of the consolidation logs. Their presence is typical for project environments or remnants of prior operations.
-*   **`ARCH_COMPARISON.md`:** This file itself was intended to be created but was not found, necessitating its recreation.
+*   **`ARCH_COMPARISON.md`:** This file itself was intended to be created but was not found, necessitating its recreation. **(Correction: This file has now been updated to accurately reflect the generalization process for both skills and agents.)**
 
 ### Evolutionary Path:
 The current state of `/Users/steven/my-supremepowers/` represents a significant evolutionary step in consolidating disparate parts of the SupremePower framework. It has integrated components from multiple sources (`~/.qwen/`, `~/.gemini/`, `~/.supremepower/`) and established a robust documentation layer for understanding and managing the framework.
@@ -144,3 +149,41 @@ The current state of `/Users/steven/my-supremepowers/` represents a significant 
     *   Deepening the analysis of specific components' functionality.
     *   Refining the architecture based on a more complete understanding of all integrated parts.
     *   Potentially reviewing and updating the `ARCH_COMPARISON.md` file as the framework continues to evolve.
+
+---
+## Skills Organization
+
+### Current State:
+-   **`skills/` directory:** Hosts generalized skills.
+-   **`qwen_skills/` directory:** Preserves original Qwen-specific skills for reference.
+
+### Generalization Process:
+-   Unique Qwen skills were analyzed for core concepts applicable beyond the Qwen environment.
+-   Generalized skills (e.g., `mcp-integration`, `plugin-settings`, `workspace-ecosystem-audit`, `agent-creation-guidance`, `persuasive-narrative-creation`, `rule-definition-patterns`) have been created in `skills/`.
+-   Domain-specific skills (`math-olympiad-solver`) and platform-specific skills (`discord-access`) are preserved in `qwen_skills/` as reference.
+
+### Organizational Strategy:
+-   **`skills/`:** The primary hub for reusable, general-purpose skills.
+-   **`qwen_skills/`:** Archive for Qwen-specific implementations and specialized logic not suitable for general abstraction.
+
+## Agents Organization
+
+### Current State:
+-   **`agents/` directory:** Hosts generalized agents. **(Note: Generalized agents are now being created in this directory.)**
+-   **`qwen_agents/` directory:** Preserves original Qwen-specific agent definitions.
+
+### Generalization Process:
+-   Qwen-specific agent archetypes (e.g., `agent-development`, `documentation-manager`, `system-analyzer`, `writing-rules`) were analyzed.
+-   Generalized agent definitions (e.g., `agents/agent-creation-guidance.md`, `agents/documentation-management.md`, `agents/system-analysis.md`, `agents/rule-definition.md`) have been created in `agents/`.
+
+### Organizational Strategy:
+-   **`agents/`:** The primary hub for reusable, general-purpose agents.
+-   **`qwen_agents/`:** Archive for Qwen-specific agent definitions and logic.
+
+## Core Skills Assessment
+
+The core skills (`using-superpowers`, `test-driven-development`, `writing-plans`, `brainstorming`, `writing-skills`) have been reviewed and found to be comprehensive and generally applicable. They cover fundamental aspects of agent interaction, planning, and code development effectively.
+
+## Overall Evolutionary Path
+
+The consolidation effort has successfully migrated generalizable concepts from Qwen-specific artifacts into a core `skills/` and `agents/` structure. This strategy promotes reusability and maintainability. The retention of original Qwen files in `qwen_skills/` and `qwen_agents/` ensures that specific, non-generalizable logic or domain expertise is not lost. This approach fosters an architecture where general capabilities are centralized, while specialized or reference implementations are archived.

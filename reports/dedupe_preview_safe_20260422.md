@@ -1,0 +1,199 @@
+# Safe Dedupe Preview (Dry Run)
+
+- Files hashed: 1538
+- Duplicate-content groups: 214
+- Canonical files kept: 214
+- Duplicate files removable: 533
+- Estimated space reclaim: 2.85 MB
+
+## Removal impact by top-level folder
+- `qwen_superpowers`: 202
+- `qwen_integrations`: 103
+- `extensions`: 57
+- `qwen_skills`: 46
+- `skills`: 44
+- `tests`: 38
+- `.git`: 14
+- `qwen_plans`: 5
+- `hookify`: 4
+- `reports`: 3
+- `commands`: 3
+- `plans`: 3
+- `docs`: 2
+- `agents`: 2
+- `documentation-management.md`: 1
+- `write_test_root.tmp`: 1
+- `lib`: 1
+- `ARCH_COMPARISON.md`: 1
+- `docs-04-22-20.csv`: 1
+- `qwen_debug`: 1
+- `LICENSE`: 1
+
+## Potential reference risks (literal path matches)
+- `.git/ai/rewrite_log` referenced in 3 other files
+- `.git/refs/remotes/origin/main` referenced in 1 other files
+- `ARCH_COMPARISON.md` referenced in 3 other files
+- `LICENSE` referenced in 3 other files
+- `agents/code-reviewer.md` referenced in 3 other files
+- `commands/brainstorm.md` referenced in 3 other files
+- `commands/execute-plan.md` referenced in 3 other files
+- `commands/write-plan.md` referenced in 3 other files
+- `docs/testing.md` referenced in 3 other files
+- `docs/windows/polyglot-hooks.md` referenced in 3 other files
+- `documentation-management.md` referenced in 1 other files
+- `extensions/gemini-extension.json` referenced in 2 other files
+- `extensions/skill-porter/examples/before-after/api-connector-converted/GEMINI.md` referenced in 1 other files
+- `extensions/skill-porter/examples/before-after/api-connector-converted/gemini-extension.json` referenced in 3 other files
+- `extensions/skill-porter/examples/before-after/code-formatter-converted/shared/examples.md` referenced in 1 other files
+- `extensions/skill-porter/examples/before-after/code-formatter-converted/shared/reference.md` referenced in 1 other files
+- `extensions/skill-porter/examples/simple-claude-skill/.claude-plugin/marketplace.json` referenced in 3 other files
+- `extensions/skill-porter/shared/examples.md` referenced in 1 other files
+- `extensions/skill-porter/shared/reference.md` referenced in 1 other files
+- `extensions/supremepower/.codex/.history/INSTALL copy_20260412044022.md` referenced in 1 other files
+- `extensions/supremepower/.codex/.history/INSTALL copy_20260412044040.md` referenced in 1 other files
+- `extensions/supremepower/.codex/INSTALL.md` referenced in 2 other files
+- `extensions/supremepower/adapters/gemini-cli/.gitkeep` referenced in 1 other files
+- `extensions/supremepower/adapters/github-copilot/.gitkeep` referenced in 1 other files
+- `extensions/supremepower/core/agents/.gitkeep` referenced in 2 other files
+- `extensions/supremepower/core/commands/.gitkeep` referenced in 2 other files
+- `extensions/supremepower/core/orchestration/.gitkeep` referenced in 1 other files
+- `extensions/supremepower/lib/.gitkeep` referenced in 1 other files
+- `extensions/supremepower/skills/brainstorming/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/dispatching-parallel-agents/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/executing-plans/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/finishing-a-development-branch/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/receiving-code-review/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/requesting-code-review/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/requesting-code-review/code-reviewer.md` referenced in 1 other files
+- `extensions/supremepower/skills/subagent-driven-development/SKILL.md` referenced in 3 other files
+- `extensions/supremepower/skills/subagent-driven-development/code-quality-reviewer-prompt.md` referenced in 1 other files
+- `extensions/supremepower/skills/subagent-driven-development/implementer-prompt.md` referenced in 1 other files
+- `extensions/supremepower/skills/subagent-driven-development/spec-reviewer-prompt.md` referenced in 1 other files
+- `extensions/supremepower/skills/systematic-debugging/CREATION-LOG.md` referenced in 1 other files
+
+## Preview remove list (first 120)
+- `.git/ai/rewrite_log`
+- `.git/ai/working_logs/27f3007e794a74c3b168bae72e5bbb3731223932/blobs/39ef847c69cf53431287aeb4dacdff0cb5e56c14e965821b1b488029f57cd13d`
+- `.git/ai/working_logs/27f3007e794a74c3b168bae72e5bbb3731223932/blobs/843d5de3f646a69b28bcde52265850918941da34b788f9a2ee453d9c06f6c5cd`
+- `.git/ai/working_logs/27f3007e794a74c3b168bae72e5bbb3731223932/blobs/baf5a3c299aa3e6d9f99eee19a4943ab988c097927236cd0220bc4b835861699`
+- `.git/ai/working_logs/27f3007e794a74c3b168bae72e5bbb3731223932/blobs/cf5a816d9dd89d5db8bfd657597024ab48588f2fdd1586eae35256c431a4d441`
+- `.git/ai/working_logs/27f3007e794a74c3b168bae72e5bbb3731223932/blobs/fd939215cf10628d135736da4cc4896b1fea57564b4c5d3572d09aaf45006917`
+- `.git/ai/working_logs/efa86c834caf5f378cdf09b28b6f3e54e34dd91d/blobs/223a22ede3ffd19464b143a4c250dd7074e9255c91f5601e4fbd9a9a6b91cd3f`
+- `.git/ai/working_logs/efa86c834caf5f378cdf09b28b6f3e54e34dd91d/blobs/24599882ee662d319a8561903803b24c4408f45deccecfbcbf8168a9c5bf76b6`
+- `.git/ai/working_logs/efa86c834caf5f378cdf09b28b6f3e54e34dd91d/blobs/6f8c3cefa9a40eb75d61812ed47ab33a5ed50bb046acab5968a62f5717c8db34`
+- `.git/ai/working_logs/efa86c834caf5f378cdf09b28b6f3e54e34dd91d/blobs/e1379002340b334d49bc5e3c62ecaf374b0e33add2078cda81f1350da7c463a6`
+- `.git/ai/working_logs/efa86c834caf5f378cdf09b28b6f3e54e34dd91d/blobs/e4ca5cb615520162c4b127bc4fbcc1d45d50213332162928fef47bee3cdc5bb9`
+- `.git/ai/working_logs/efa86c834caf5f378cdf09b28b6f3e54e34dd91d/blobs/fe588a98546dfdb8e27f201ade5ca229f3dc80f71806f8c634bf6ac9cb2421ed`
+- `.git/refs/notes/ai-remote/origin`
+- `.git/refs/remotes/origin/main`
+- `ARCH_COMPARISON.md`
+- `LICENSE`
+- `agents/code-reviewer.md`
+- `agents/write_test_agents.tmp`
+- `commands/brainstorm.md`
+- `commands/execute-plan.md`
+- `commands/write-plan.md`
+- `docs-04-22-20.csv`
+- `docs/testing.md`
+- `docs/windows/polyglot-hooks.md`
+- `documentation-management.md`
+- `extensions/gemini-extension.json`
+- `extensions/skill-porter/examples/before-after/api-connector-converted/GEMINI.md`
+- `extensions/skill-porter/examples/before-after/api-connector-converted/gemini-extension.json`
+- `extensions/skill-porter/examples/before-after/code-formatter-converted/shared/examples.md`
+- `extensions/skill-porter/examples/before-after/code-formatter-converted/shared/reference.md`
+- `extensions/skill-porter/examples/simple-claude-skill/.claude-plugin/marketplace.json`
+- `extensions/skill-porter/shared/examples.md`
+- `extensions/skill-porter/shared/reference.md`
+- `extensions/supremepower/.codex/.history/INSTALL copy_20260412044022.md`
+- `extensions/supremepower/.codex/.history/INSTALL copy_20260412044040.md`
+- `extensions/supremepower/.codex/INSTALL.md`
+- `extensions/supremepower/adapters/gemini-cli/.gitkeep`
+- `extensions/supremepower/adapters/github-copilot/.gitkeep`
+- `extensions/supremepower/core/agents/.gitkeep`
+- `extensions/supremepower/core/commands/.gitkeep`
+- `extensions/supremepower/core/orchestration/.gitkeep`
+- `extensions/supremepower/lib/.gitkeep`
+- `extensions/supremepower/skills/brainstorming/SKILL.md`
+- `extensions/supremepower/skills/dispatching-parallel-agents/SKILL.md`
+- `extensions/supremepower/skills/executing-plans/SKILL.md`
+- `extensions/supremepower/skills/finishing-a-development-branch/SKILL.md`
+- `extensions/supremepower/skills/receiving-code-review/SKILL.md`
+- `extensions/supremepower/skills/requesting-code-review/SKILL.md`
+- `extensions/supremepower/skills/requesting-code-review/code-reviewer.md`
+- `extensions/supremepower/skills/subagent-driven-development/SKILL.md`
+- `extensions/supremepower/skills/subagent-driven-development/code-quality-reviewer-prompt.md`
+- `extensions/supremepower/skills/subagent-driven-development/implementer-prompt.md`
+- `extensions/supremepower/skills/subagent-driven-development/spec-reviewer-prompt.md`
+- `extensions/supremepower/skills/systematic-debugging/CREATION-LOG.md`
+- `extensions/supremepower/skills/systematic-debugging/SKILL.md`
+- `extensions/supremepower/skills/systematic-debugging/condition-based-waiting-example.ts`
+- `extensions/supremepower/skills/systematic-debugging/condition-based-waiting.md`
+- `extensions/supremepower/skills/systematic-debugging/defense-in-depth.md`
+- `extensions/supremepower/skills/systematic-debugging/find-polluter.sh`
+- `extensions/supremepower/skills/systematic-debugging/root-cause-tracing.md`
+- `extensions/supremepower/skills/systematic-debugging/test-academic.md`
+- `extensions/supremepower/skills/systematic-debugging/test-pressure-1.md`
+- `extensions/supremepower/skills/systematic-debugging/test-pressure-2.md`
+- `extensions/supremepower/skills/systematic-debugging/test-pressure-3.md`
+- `extensions/supremepower/skills/test-driven-development/SKILL.md`
+- `extensions/supremepower/skills/test-driven-development/testing-anti-patterns.md`
+- `extensions/supremepower/skills/using-git-worktrees/SKILL.md`
+- `extensions/supremepower/skills/using-superpowers/references/codex-tools.md`
+- `extensions/supremepower/skills/using-superpowers/references/copilot-tools.md`
+- `extensions/supremepower/skills/using-superpowers/references/gemini-tools.md`
+- `extensions/supremepower/skills/verification-before-completion/SKILL.md`
+- `extensions/supremepower/skills/writing-plans/SKILL.md`
+- `extensions/supremepower/skills/writing-skills/SKILL.md`
+- `extensions/supremepower/skills/writing-skills/anthropic-best-practices.md`
+- `extensions/supremepower/skills/writing-skills/examples/CLAUDE_MD_TESTING.md`
+- `extensions/supremepower/skills/writing-skills/graphviz-conventions.dot`
+- `extensions/supremepower/skills/writing-skills/persuasion-principles.md`
+- `extensions/supremepower/skills/writing-skills/render-graphs.js`
+- `extensions/supremepower/skills/writing-skills/testing-skills-with-subagents.md`
+- `extensions/supremepower/tests/adapters/gemini-cli/.gitkeep`
+- `extensions/supremepower/tests/agents/.gitkeep`
+- `extensions/supremepower/tests/orchestration/.gitkeep`
+- `hookify/2cd88e7947b7/core/__init__.py`
+- `hookify/2cd88e7947b7/hooks/__init__.py`
+- `hookify/2cd88e7947b7/matchers/__init__.py`
+- `hookify/2cd88e7947b7/utils/__init__.py`
+- `lib/skills-core.js`
+- `plans/2025-11-22-opencode-support-design.md`
+- `plans/2025-11-22-opencode-support-implementation.md`
+- `plans/2025-11-28-skills-improvements-from-user-feedback.md`
+- `qwen_debug/latest`
+- `qwen_integrations/supremepower/commands/brainstorm.md`
+- `qwen_integrations/supremepower/commands/brainstorm.toml`
+- `qwen_integrations/supremepower/commands/debug.toml`
+- `qwen_integrations/supremepower/commands/execute-plan.md`
+- `qwen_integrations/supremepower/commands/implement.toml`
+- `qwen_integrations/supremepower/commands/plan.toml`
+- `qwen_integrations/supremepower/commands/skills/brainstorming.toml`
+- `qwen_integrations/supremepower/commands/skills/dispatching-parallel-agents.toml`
+- `qwen_integrations/supremepower/commands/skills/executing-plans.toml`
+- `qwen_integrations/supremepower/commands/skills/finishing-a-development-branch.toml`
+- `qwen_integrations/supremepower/commands/skills/receiving-code-review.toml`
+- `qwen_integrations/supremepower/commands/skills/requesting-code-review.toml`
+- `qwen_integrations/supremepower/commands/skills/subagent-driven-development.toml`
+- `qwen_integrations/supremepower/commands/skills/systematic-debugging.toml`
+- `qwen_integrations/supremepower/commands/skills/test-driven-development.toml`
+- `qwen_integrations/supremepower/commands/skills/using-git-worktrees.toml`
+- `qwen_integrations/supremepower/commands/skills/using-superpowers.toml`
+- `qwen_integrations/supremepower/commands/skills/verification-before-completion.toml`
+- `qwen_integrations/supremepower/commands/skills/writing-plans.toml`
+- `qwen_integrations/supremepower/commands/skills/writing-skills.toml`
+- `qwen_integrations/supremepower/commands/sp/agents.toml`
+- `qwen_integrations/supremepower/commands/sp/analyze.toml`
+- `qwen_integrations/supremepower/commands/sp/auto-agent-create.toml`
+- `qwen_integrations/supremepower/commands/sp/config.toml`
+- `qwen_integrations/supremepower/commands/sp/status.toml`
+- `qwen_integrations/supremepower/commands/sp/with.toml`
+- `qwen_integrations/supremepower/commands/tdd.toml`
+- `qwen_integrations/supremepower/commands/write-plan.md`
+- `qwen_integrations/supremepower/docs/ARCHITECTURE.md`
+
+## Functionality expectation
+- Core functionality should remain if canonical trees are kept (`extensions/supremepower`, root `commands/skills/docs/tests`).
+- Mirror-tree specific behavior under `qwen_superpowers*` and `qwen_integrations/*` may be reduced if those copies are pruned.
+- This is a dry run only; no files were deleted.

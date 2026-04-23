@@ -1,0 +1,13 @@
+metric,value
+qwen_projects_exists,True
+projects_exists,True
+qwen_projects_files,94
+projects_files,0
+qwen_projects_size_mb,273.97
+projects_size_mb,0.0
+exact_hash_overlap_groups,0
+qwen_files_with_hash_match_in_projects,0
+projects_files_with_hash_match_in_qwen,0
+name_overlap_count,0
+qwen_unique_by_hash_count,94
+projects_unique_by_hash_count,0
