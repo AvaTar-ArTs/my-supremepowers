@@ -19,7 +19,6 @@ node_modules/
 # Sensitive local AI runtime state
 qwen_projects/
 qwen_debug/
-qwen_google_accounts.json
-qwen_settings.json
-.qwen_env
-oauth_creds.json
+
+# Local generated audit exports
+/docs-*.csv

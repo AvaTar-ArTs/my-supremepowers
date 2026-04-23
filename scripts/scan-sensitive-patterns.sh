@@ -25,12 +25,14 @@ is_ignored_path() {
 
 PATTERNS=(
   'github_pat_[A-Za-z0-9_]+'
-  'ghp_[A-Za-z0-9]+'
+  'gh[pousr]_[A-Za-z0-9_]+'
   'AIza[0-9A-Za-z\-_]{35}'
   'ya29\.[0-9A-Za-z\-_]+'
   'xox[baprs]-[0-9A-Za-z-]+'
-  'sk-[A-Za-z0-9]{20,}'
+  'sk-[A-Za-z0-9_\-]{20,}'
   'BEGIN (RSA|EC|OPENSSH|DSA|PGP) PRIVATE KEY'
+  '(?i)(access|refresh)_token["'"'"'\s:=]{1,6}["'"'"']?[A-Za-z0-9_\-\.]{16,}'
+  '(?i)authorization:[[:space:]]*bearer[[:space:]]+[A-Za-z0-9_\-\.]{16,}'
 )
 
 HITS=0
